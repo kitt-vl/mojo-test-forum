@@ -1,0 +1,55 @@
+/*start of pagecolumn.com template*/
+.header{
+   position: relative;
+   float: left;
+   left: 1.50%;
+   width: 97.00%;
+   background-color: #FFFF66
+}
+.wrapper{
+   position: relative;
+   float: left;
+   left: 1.50%;
+   width: 97.00%;
+   background-color: #FFFF66
+}
+.left{
+   position: relative;
+   float: left;
+   left: 0.00%;
+   width: 31.00%;
+   background-color: #BFBFBF;
+}
+.right{
+   position: relative;
+   float: right;
+   right: 0.00%;
+   width: 69.00%;
+   background-color: #3F5F5F;
+   color: #FFF;
+}
+.footer{
+   position: relative;
+   float: left;
+   left: 1.50%;
+   width: 97.00%;
+   background-color: #FFFF66
+}
+
+body {
+   border-width: 0px;
+   padding: 0px;
+   margin: 0px;
+   font-size: 90%;
+   background-color: #2F4F4F;
+   font-family: Sans-Serif;
+}
+/*end of pagecolumn.com template*/
+
+.pad1{
+	padding: 5px;
+}
+
+.error{
+	font-size: 4em;
+}

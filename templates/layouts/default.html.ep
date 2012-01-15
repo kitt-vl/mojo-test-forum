@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Life25</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="site" />
+    <meta name="keywords" content="primorye" />
+
+    <link rel="Stylesheet" href="/main.css" type="text/css" />
+    <!--<script type="text/javascript" src="script/bsc.js">   </script>-->
+    
+</head>
+<body>	  
+	  
+	    <div class="header">
+	         header
+	    </div> 
+	    <div class="wrapper">
+	        <div class="left">
+	            <ul>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+					<li>First</li>
+	            </ul>
+	        </div>
+	        <div class="right">
+	            <%= content %>
+	        </div>  	       
+	    </div>
+	    <div class="footer">
+	        footer
+	    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+% layout 'default';
+
+
+<h2><%= $message %></h2>
+<pre><code><%== $details %></code></pre>
+<h5>
+%== '$self is ' . ref $self
+</h5>
+%	if(defined $self->stash('taction'))
+%	{
+Action = <%== $self->stash('taction') %><br>
+%	}
+%	if(defined $self->stash('id'))
+%	{
+Id = <%== $self->stash('id') %><br>
+%	} 
+
+%	if(my $users = $self->stash('users'))
+%	{
+%		for my $user (@$users)
+%		{
+<%==			my $usr_desc = <<USR
+----------------------------------------------	
+id = @{[ $user->id ]}	
+login @{[ $user->login ]}	
+password @{[ $user->password ]}
+email @{[ $user->email ]}
+USR
+%>
+%		}
+%	}
+
