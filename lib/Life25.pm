@@ -21,11 +21,3 @@ sub startup {
   $r->route('/')->to('site#index');  
 }
 1;
-
-
-__DATA__
-@@ reg.html.ep
-<h4>Reg item here</h4>
-
-@@ reg2.html.ep
-<h5>Reg2 item here</h5>

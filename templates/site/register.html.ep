@@ -6,12 +6,13 @@
 	<div class="error pad1">
 	%=		'Ошибка: ' . $user->error
 	</div>
-
 	
 %		}
+
 	<pre><code>
-	%= dumper $self->tx->remote_address
+
 	</code></pre>
+	
 %		if(!$user->is_new && !$user->error)
 %		{
 			<h1>Вы успешно зарегистрированы!</h1>

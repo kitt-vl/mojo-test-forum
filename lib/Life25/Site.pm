@@ -3,7 +3,6 @@ use strict;
 use warnings;
 use base 'Mojolicious::Controller';
 use utf8;
-
 use Data::Dumper;
 use Life25::DB;
 
@@ -15,7 +14,7 @@ sub register
 		
 		$user->login($self->req->body_params->param('login'));
 		
-		if($user->load())
+		if($user->load)
 		{
 			$user->error("Пользователь " . $user->login . " уже зарегистрирован!");
 		}
@@ -23,6 +22,9 @@ sub register
 		{
 			$user = User->new;
 			$user->fill($self->req->body_params->to_hash);
+			
+			$user->extra('last_ip', $self->tx->remote_address);
+			
 			$user->save();
 		}		
 		

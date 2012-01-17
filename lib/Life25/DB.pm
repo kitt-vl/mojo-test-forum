@@ -1,7 +1,6 @@
 use strict;
 use warnings;
 use utf8;
-
 use DateTime;
 use Data::Dumper;
 ################################################################################
@@ -130,7 +129,7 @@ sub errors{
 	return wantarray ? @{$self->{__ERRORS}} : join "\n", @{$self->{__ERRORS}};
 }
 
-#Overloaded method returns error string incliding $self->errors messages
+#Overloaded method returns error string including $self->errors messages
 sub error{
 	my $self = shift;
 	
@@ -143,7 +142,7 @@ sub error{
 	return $ret;
 }
 
-#Clear multiple errors store
+#Clear multiple errors storage
 sub clear_errors {
 	my $self = shift;
 	$self->{__ERRORS} = [];
@@ -208,11 +207,24 @@ sub before_save{
 	$self->errors("Пароль и подтверждение пароля не совпадают!")
 		if($self->extra('password1') and ($self->extra('password1') ne $self->extra('password2')));
 	
-	#On save put password into sha1 hash for security reason
+	
 	if($self->is_new && !$self->error)
 	{
+		#On save put password into sha1 hash for security reason
 		$self->password(sha1_sum($self->extra('password1')));
+		
+		#Set related info
+		$self->user_info(User_Info->new);
+
+		$self->user_info->register_date(DateTime->now);
+		$self->user_info->last_ip($self->extra('last_ip')) if $self->extra('last_ip');
+		
 	}	
+	
+	if(! $self->error)
+	{
+		$self->user_info->visit_date(DateTime->now);
+	}
 	
 	return ! scalar $self->errors;
 }
@@ -234,5 +246,19 @@ sub object_class { 'User' }
  
 __PACKAGE__->make_manager_methods('users');
  
+1;
+################################################################################
+package User_Info;
+
+__PACKAGE__->meta->setup
+(
+  table => 'user_info',
+  auto  => 1,
+);
+
+use base qw(My::DB::Object);
+
+__PACKAGE__->meta->auto_initialize;
+
 1;
 ################################################################################

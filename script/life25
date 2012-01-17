@@ -17,7 +17,7 @@ EOF
 
 # Application
 $ENV{MOJO_APP} ||= 'Life25';
-$ENV{MOJO_REVERSE_PROXY} = 1;
+#$ENV{MOJO_REVERSE_PROXY} = 1;
 
 # Start commands
 Mojolicious::Commands->start;
