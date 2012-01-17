@@ -3,8 +3,11 @@
 %		my $user = $self->stash('user');
 %		if($self->req->method eq 'POST' && $user->error)
 %		{
+%			my @errors = split /\n/, $user->error;
+%			unshift @errors, 'В процессе регистрации обнаружены ошибки: ';
+%			
 	<div class="error pad1">
-	%=		'Ошибка: ' . $user->error
+	%==		join '<br/>', @errors
 	</div>
 	
 %		}

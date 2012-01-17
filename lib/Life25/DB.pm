@@ -200,16 +200,26 @@ sub new{
 sub before_save{
 	my $self = shift;
 	
-	#Simple validation
-	$self->errors("Логин не должен быть пустым!") unless $self->login;
-	$self->errors("Эл. почта не должна быть пустой!") unless $self->email;
-	$self->errors("Пароль не должен быть пустым!") unless $self->extra('password1');
-	$self->errors("Пароль и подтверждение пароля не совпадают!")
-		if($self->extra('password1') and ($self->extra('password1') ne $self->extra('password2')));
-	
-	
-	if($self->is_new && !$self->error)
+
+	if($self->is_new)
 	{
+		#Check new login not exists in database
+		my $user_check = User->new(login=>$self->login);
+		if($user_check->load)
+		{
+			$self->errors("Пользователь " . $self->login . " уже зарегистрирован!");
+		}
+		$user_check = undef;
+		
+		#Simple validation
+		$self->errors("Логин не должен быть пустым!") unless $self->login;
+		$self->errors("Эл. почта не должна быть пустой!") unless $self->email;
+		$self->errors("Пароль не должен быть пустым!") unless $self->extra('password1');
+		$self->errors("Пароль и подтверждение пароля не совпадают!")
+			if($self->extra('password1') and ($self->extra('password1') ne $self->extra('password2')));
+		
+		
+		
 		#On save put password into sha1 hash for security reason
 		$self->password(sha1_sum($self->extra('password1')));
 		
@@ -221,7 +231,7 @@ sub before_save{
 		
 	}	
 	
-	if(! $self->error)
+	if(!$self->error)
 	{
 		$self->user_info->visit_date(DateTime->now);
 	}

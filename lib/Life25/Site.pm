@@ -11,22 +11,13 @@ sub register
 		my $self = shift;
 		
 		my $user = User->new;
+
+		$user->fill($self->req->body_params->to_hash);
 		
-		$user->login($self->req->body_params->param('login'));
+		$user->extra('last_ip', $self->tx->remote_address);
 		
-		if($user->load)
-		{
-			$user->error("Пользователь " . $user->login . " уже зарегистрирован!");
-		}
-		else
-		{
-			$user = User->new;
-			$user->fill($self->req->body_params->to_hash);
-			
-			$user->extra('last_ip', $self->tx->remote_address);
-			
-			$user->save();
-		}		
+		$user->save();
+	
 		
 		$self->stash('user', $user);
 		
