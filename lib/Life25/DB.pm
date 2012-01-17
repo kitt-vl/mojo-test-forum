@@ -27,9 +27,9 @@ My::DB->default_type('session');
 package My::DB::Object; 
 use base 'Rose::DB::Object';
 
+#Overloaded constructor whith some private fields initialization
 sub new
-{
-	
+{	
 	my($class) = shift;
 
 	my $self = $class->SUPER::new(@_);
@@ -43,6 +43,8 @@ sub new
 	return $self;
 }
 
+#Set default error_mode 'return', better 
+#check error manual, that use eval to catch exception
 sub init{
 	my $self = shift;
 
@@ -51,14 +53,24 @@ sub init{
 	$self->meta->error_mode('return');
 }
 
+#Prevent load method from raise error,
+#just return 0 if load fail
 sub load{
 	my $self = $_[0];
+	
 	my $old_err = $self->error;
+	
+	my $old_err_mode = $self->meta->error_mode;
+	$self->meta->error_mode('return') unless $old_err_mode ne 'return';
+	
 	my $ret = $self->SUPER::load(@_);
+	
 	$self->error($old_err) unless $self->error ne $old_err;
+	
 	return $ret;
 }
 
+#Nonpersistent properties for object, not saved in database
 sub extra{
 	my $self = shift;
 	my $param = shift;
@@ -67,6 +79,8 @@ sub extra{
 	return $self->{__EXTRA}->{$param};
 }
 
+#Fill object properties from hash or hashref, according to 
+#$self->{__ALLOW_FILL} array. Not containing properties puts to $self->extra
 sub fill {
 	my $self = shift;
 	
@@ -105,6 +119,18 @@ sub fill {
 	
 }
 
+#Now object can store many errors! xD
+sub errors{
+	my $self = shift;
+	
+	my @params = @_;
+	
+	push @{$self->{__ERRORS}}, @params if @params;	
+	
+	return wantarray ? @{$self->{__ERRORS}} : join "\n", @{$self->{__ERRORS}};
+}
+
+#Overloaded method returns error string incliding $self->errors messages
 sub error{
 	my $self = shift;
 	
@@ -117,31 +143,27 @@ sub error{
 	return $ret;
 }
 
-sub errors{
-	my $self = shift;
-	
-	my @params = @_;
-	
-	push @{$self->{__ERRORS}}, @params if @params;	
-	
-	return wantarray ? @{$self->{__ERRORS}} : join "\n", @{$self->{__ERRORS}};
-}
-
+#Clear multiple errors store
 sub clear_errors {
 	my $self = shift;
 	$self->{__ERRORS} = [];
 	
 };
 
+
 sub init_db{ My::DB->new };
 
-
+#Method raised before save object to database,
+#you can do some validation here.
+#If returns 0, save() method don't do anything real to store data in database
+#Don't forget set up some errors if you return 0 from here
 sub before_save{ 
 		my $self = $_[0];
 		
 		return ! $self->errors;		
 };
 
+#Overloaded save() method
 sub save{
 	my $self = $_[0];
 	
@@ -152,6 +174,7 @@ sub save{
 	$self->SUPER::save(@_);
 };
 
+#Method check is object present in  database
 sub is_new{
 	my $self = shift;
 	return ! Rose::DB::Object::Util::is_in_db($self);
