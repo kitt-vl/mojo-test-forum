@@ -1,5 +1,7 @@
 use strict;
 use warnings;
+use utf8;
+
 use DateTime;
 use Data::Dumper;
 ################################################################################
@@ -47,6 +49,14 @@ sub init{
 	$self->SUPER::init(@_);
 	
 	$self->meta->error_mode('return');
+}
+
+sub load{
+	my $self = $_[0];
+	my $old_err = $self->error;
+	my $ret = $self->SUPER::load(@_);
+	$self->error($old_err) unless $self->error ne $old_err;
+	return $ret;
 }
 
 sub extra{
@@ -150,7 +160,8 @@ sub is_new{
 1; 
 ################################################################################
 package User;
- 
+use Mojo::Util qw(sha1_sum);
+
 use base qw(My::DB::Object);
 
 __PACKAGE__->meta->auto_initialize;
@@ -160,36 +171,36 @@ sub new{
 	my $class = shift;
 	my $self = $class->SUPER::new(@_);
 	$self->init(@_);
-	$self->{__ALLOW_FILL} = ['login', 'email', 'password'];
+	$self->{__ALLOW_FILL} = ['login', 'email'];
 	return $self;
 }
 
 sub before_save{
 	my $self = shift;
 	
-	$self->errors("Login must not be empty!") unless $self->login;
-	$self->errors("Email must not be empty!") unless $self->email;
-	$self->errors("Password must not be me empty!") unless $self->password;
+	#Simple validation
+	$self->errors("Логин не должен быть пустым!") unless $self->login;
+	$self->errors("Эл. почта не должна быть пустой!") unless $self->email;
+	$self->errors("Пароль не должен быть пустым!") unless $self->extra('password1');
+	$self->errors("Пароль и подтверждение пароля не совпадают!")
+		if($self->extra('password1') and ($self->extra('password1') ne $self->extra('password2')));
+	
+	#On save put password into sha1 hash for security reason
+	if($self->is_new && !$self->error)
+	{
+		$self->password(sha1_sum($self->extra('password1')));
+	}	
 	
 	return ! scalar $self->errors;
 }
- 
-1;
-################################################################################
-package News;
- 
-use base 'My::DB::Object';
 
-sub before_save{
-	
-	my $self = shift;
-	
-	$self->title($self->title() . " at " . DateTime->now);
-	
-	return 1;
-};
+#sub save{
+#	my $self = $_[0];
+#	return 0 unless $self->before_save(@_);
+
+#	return $self->SUPER::save(@_)
+#}
  
-__PACKAGE__->meta->auto_initialize;
 1;
 ################################################################################
 package User::Manager;
@@ -201,5 +212,4 @@ sub object_class { 'User' }
 __PACKAGE__->make_manager_methods('users');
  
 1;
-
 ################################################################################

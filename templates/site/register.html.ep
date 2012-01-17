@@ -1,64 +1,65 @@
 % layout 'default';
 
-<div class="pad1">
-%= form_for register => {foo => 'bar'} => (method => 'post') => begin
-<table id="tbl_register">
-	<tr>
-		<td>
-		Логин: 
-		</td>
-		<td>
-		%= 		text_field 'login'
-		</td>
-	</tr>
-	<tr>
-		<td>
-		Почтовый ящик: 
-		</td>
-		<td>
-		%= 		text_field 'email' 
-		</td>
-	</tr>
-	<tr>
-		<td>
-		Пароль: 
-		</td>
-		<td>
-		%= 		text_field 'password' 
-		</td>
-	</tr>
-	<tr>
-		<td>
-		Подтверждение пароля: 
-		</td>
-		<td>
-		%= 		text_field 'password_repeat' 
-		</td>
-	</tr>
-	<tr>
-		<td>
-			%=	submit_button 'Регистрация'
-		</td>
-	</tr>
-</table>
-% end
-</div>
-
-%	if($self->req->method eq 'POST')
-%	{
 %		my $user = $self->stash('user');
-%		if($user->error)
+%		if($self->req->method eq 'POST' && $user->error)
 %		{
-	<div class="error">
-%=		'Register error: ' . $user->error
+	<div class="error pad1">
+	%=		'Ошибка: ' . $user->error
 	</div>
+	<pre><code>
+	%#dumper $user
+	</code></pre>
+	
+%		}
+
+%		if(!$user->is_new && !$user->error) #
+%		{
+			<h1>Вы успешно зарегистрированы!</h1>
 %		}
 %		else
 %		{
-%			if(!$user->is_new)
-%			{
-<h1>Thanks for register!</h1>
-%			}
+		<div class="pad1">
+			%= form_for register  => (method => 'post') => begin
+			<table id="tbl_register">
+				<tr>
+					<td>
+					Логин: 
+					</td>
+					<td>
+					%= 		text_field 'login'
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Почтовый ящик: 
+					</td>
+					<td>
+					%= 		text_field 'email' 
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Пароль: 
+					</td>
+					<td>
+					%= 		text_field 'password1' 
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Подтверждение пароля: 
+					</td>
+					<td>
+					%= 		text_field 'password2' 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						%=	submit_button 'Регистрация'
+					</td>
+				</tr>
+			</table>
+			% end
+		</div>
 %		}
-%	}
 

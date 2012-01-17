@@ -826,3 +826,1112 @@ Compilation failed in require at (eval 245) line 1.
 [Mon Jan 16 02:19:44 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
 [Mon Jan 16 02:19:44 2012] [debug] Dispatching "Life25::Site->register".
 [Mon Jan 16 02:19:44 2012] [debug] 200 OK (0.015271s, 65.484/s).
+[Tue Jan 17 01:10:59 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:10:59 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:11:01 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:11:01 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:11:01 2012] [debug] 200 OK (1.959631s, 0.510/s).
+[Tue Jan 17 01:11:04 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:11:04 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:11:04 2012] [debug] 200 OK (0.019491s, 51.306/s).
+[Tue Jan 17 01:15:05 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:15:05 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:15:06 2012] [error] syntax error at script/../lib/Life25/Site.pm line 14, near ");"
+Compilation failed in require at (eval 245) line 1.
+
+[Tue Jan 17 01:15:06 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 01:15:06 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 01:15:06 2012] [debug] Rendering inline template.
+[Tue Jan 17 01:15:06 2012] [debug] 500 Internal Server Error (0.605498s, 1.652/s).
+[Tue Jan 17 01:15:27 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:15:27 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:15:28 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:15:28 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:15:28 2012] [debug] 200 OK (0.639661s, 1.563/s).
+[Tue Jan 17 01:15:52 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:15:52 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:15:53 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:15:53 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:15:53 2012] [debug] 200 OK (0.601790s, 1.662/s).
+[Tue Jan 17 01:16:16 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:16:16 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:16:16 2012] [debug] 200 OK (0.008928s, 112.007/s).
+[Tue Jan 17 01:16:17 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:16:17 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:16:17 2012] [debug] 200 OK (0.008409s, 118.920/s).
+[Tue Jan 17 01:16:18 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:16:18 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:16:18 2012] [debug] 200 OK (0.009213s, 108.542/s).
+[Tue Jan 17 01:16:19 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:16:19 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:16:19 2012] [debug] 200 OK (0.009481s, 105.474/s).
+[Tue Jan 17 01:16:31 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:16:31 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:16:32 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:16:32 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:16:32 2012] [debug] 200 OK (0.588936s, 1.698/s).
+[Tue Jan 17 01:16:33 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:16:33 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:16:33 2012] [debug] 200 OK (0.008887s, 112.524/s).
+[Tue Jan 17 01:16:34 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:16:34 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:16:34 2012] [debug] 200 OK (0.006641s, 150.580/s).
+[Tue Jan 17 01:16:34 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:16:34 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:16:34 2012] [debug] 200 OK (0.006574s, 152.114/s).
+[Tue Jan 17 01:16:35 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:16:35 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:16:35 2012] [debug] 200 OK (0.005901s, 169.463/s).
+[Tue Jan 17 01:17:00 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:17:00 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:17:01 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:17:01 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:17:01 2012] [debug] 200 OK (0.566606s, 1.765/s).
+[Tue Jan 17 01:17:02 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:17:02 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:17:02 2012] [debug] 200 OK (0.011356s, 88.059/s).
+[Tue Jan 17 01:17:05 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:17:05 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:17:05 2012] [debug] 200 OK (0.015592s, 64.135/s).
+[Tue Jan 17 01:17:19 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:17:19 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:17:19 2012] [debug] 200 OK (0.017373s, 57.561/s).
+[Tue Jan 17 01:17:56 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:17:56 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:17:57 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:17:57 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:17:57 2012] [debug] 200 OK (0.579467s, 1.726/s).
+[Tue Jan 17 01:17:59 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:17:59 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:17:59 2012] [debug] 200 OK (0.006176s, 161.917/s).
+[Tue Jan 17 01:18:08 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:18:08 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:18:08 2012] [debug] 200 OK (0.014202s, 70.413/s).
+[Tue Jan 17 01:19:36 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:19:36 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:19:36 2012] [debug] 200 OK (0.006911s, 144.697/s).
+[Tue Jan 17 01:19:40 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:19:40 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:19:40 2012] [debug] 200 OK (0.006246s, 160.102/s).
+[Tue Jan 17 01:19:59 2012] [info] Server listening (http://*:3000)
+[Tue Jan 17 01:20:02 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:20:02 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:20:02 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:20:02 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:20:02 2012] [debug] 200 OK (0.576528s, 1.735/s).
+[Tue Jan 17 01:20:04 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:20:04 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:20:04 2012] [debug] 200 OK (0.041457s, 24.121/s).
+[Tue Jan 17 01:20:06 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:20:06 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:20:06 2012] [debug] 200 OK (0.006315s, 158.353/s).
+[Tue Jan 17 01:20:09 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:20:09 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:20:09 2012] [debug] 200 OK (0.011204s, 89.254/s).
+[Tue Jan 17 01:20:16 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:20:16 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:20:16 2012] [debug] 200 OK (0.011716s, 85.353/s).
+[Tue Jan 17 01:22:10 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:22:10 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:22:10 2012] [debug] 200 OK (0.017004s, 58.810/s).
+[Tue Jan 17 01:22:19 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:22:19 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:22:19 2012] [debug] 200 OK (0.023133s, 43.228/s).
+[Tue Jan 17 01:23:26 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:23:26 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:23:26 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:23:26 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:23:26 2012] [debug] 200 OK (0.565740s, 1.768/s).
+[Tue Jan 17 01:23:41 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:23:41 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:23:41 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:23:41 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:23:41 2012] [debug] 200 OK (0.570963s, 1.751/s).
+[Tue Jan 17 01:23:42 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:23:42 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:23:42 2012] [debug] 200 OK (0.005918s, 168.976/s).
+[Tue Jan 17 01:24:05 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:24:05 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:24:05 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:24:05 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:24:05 2012] [debug] 200 OK (0.589806s, 1.695/s).
+[Tue Jan 17 01:24:06 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:24:06 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:24:06 2012] [debug] 200 OK (0.006952s, 143.843/s).
+[Tue Jan 17 01:25:08 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:25:08 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:25:08 2012] [debug] 200 OK (0.008735s, 114.482/s).
+[Tue Jan 17 01:25:10 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:25:10 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:25:10 2012] [debug] 200 OK (0.006349s, 157.505/s).
+[Tue Jan 17 01:26:08 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:26:08 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:26:08 2012] [debug] 200 OK (0.008603s, 116.239/s).
+[Tue Jan 17 01:26:25 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:26:25 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:26:26 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:26:26 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:26:26 2012] [debug] 200 OK (0.609627s, 1.640/s).
+[Tue Jan 17 01:27:03 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:27:03 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:27:03 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:27:03 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:27:03 2012] [debug] 200 OK (0.600381s, 1.666/s).
+[Tue Jan 17 01:28:34 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:28:34 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:28:35 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:28:35 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:28:35 2012] [debug] 200 OK (0.576906s, 1.733/s).
+[Tue Jan 17 01:28:43 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:28:43 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:28:43 2012] [debug] 200 OK (0.013578s, 73.649/s).
+[Tue Jan 17 01:28:57 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:28:57 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:28:57 2012] [debug] 200 OK (0.004802s, 208.247/s).
+[Tue Jan 17 01:30:12 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:30:12 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:30:13 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:30:13 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:30:13 2012] [debug] 200 OK (0.578115s, 1.730/s).
+[Tue Jan 17 01:30:14 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:30:14 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:30:14 2012] [debug] 200 OK (0.009199s, 108.707/s).
+[Tue Jan 17 01:36:29 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:36:29 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:36:29 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:36:29 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:36:29 2012] [debug] 200 OK (0.594586s, 1.682/s).
+[Tue Jan 17 01:36:34 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:36:34 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:36:34 2012] [debug] 200 OK (0.016196s, 61.744/s).
+[Tue Jan 17 01:37:44 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:37:44 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:37:45 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:37:45 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:37:45 2012] [debug] 200 OK (0.571712s, 1.749/s).
+[Tue Jan 17 01:37:46 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:37:46 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:37:46 2012] [debug] 200 OK (0.018847s, 53.059/s).
+[Tue Jan 17 01:38:33 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:38:33 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:38:33 2012] [debug] 200 OK (0.014926s, 66.997/s).
+[Tue Jan 17 01:38:46 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:38:46 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:38:46 2012] [debug] 200 OK (0.006354s, 157.381/s).
+[Tue Jan 17 01:39:31 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:39:31 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:39:31 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:39:31 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:39:31 2012] [debug] 200 OK (0.659262s, 1.517/s).
+[Tue Jan 17 01:39:38 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:39:38 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:39:38 2012] [debug] 200 OK (0.018961s, 52.740/s).
+[Tue Jan 17 01:39:42 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:39:42 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:39:42 2012] [debug] 200 OK (0.007487s, 133.565/s).
+[Tue Jan 17 01:40:15 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:40:15 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:40:15 2012] [debug] 200 OK (0.006833s, 146.349/s).
+[Tue Jan 17 01:40:17 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:40:17 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:40:17 2012] [debug] 200 OK (0.009136s, 109.457/s).
+[Tue Jan 17 01:47:49 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:47:49 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:47:50 2012] [error] syntax error at script/../lib/Life25/DB.pm line 177, near ")
+	
+	return"
+BEGIN not safe after errors--compilation aborted at script/../lib/Life25/DB.pm line 184.
+Compilation failed in require at script/../lib/Life25/Site.pm line 8.
+BEGIN failed--compilation aborted at script/../lib/Life25/Site.pm line 8.
+Compilation failed in require at (eval 245) line 1.
+
+[Tue Jan 17 01:47:50 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 01:47:50 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 01:47:50 2012] [debug] Rendering inline template.
+[Tue Jan 17 01:47:50 2012] [debug] 500 Internal Server Error (1.043639s, 0.958/s).
+[Tue Jan 17 01:48:10 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:48:10 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:48:11 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:48:11 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:48:11 2012] [debug] 200 OK (1.180927s, 0.847/s).
+[Tue Jan 17 01:48:12 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:48:12 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:48:13 2012] [debug] 200 OK (0.018400s, 54.348/s).
+[Tue Jan 17 01:48:26 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:48:26 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:48:26 2012] [debug] 200 OK (0.033083s, 30.227/s).
+[Tue Jan 17 01:48:34 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:48:34 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:48:34 2012] [debug] 200 OK (0.032616s, 30.660/s).
+[Tue Jan 17 01:55:29 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:55:29 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:55:29 2012] [debug] 200 OK (0.015126s, 66.111/s).
+[Tue Jan 17 01:56:03 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:56:03 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:56:04 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 01:56:04 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:56:04 2012] [debug] 200 OK (1.132803s, 0.883/s).
+[Tue Jan 17 01:56:44 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:56:44 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 01:56:44 2012] [debug] 200 OK (0.020615s, 48.508/s).
+[Tue Jan 17 01:56:50 2012] [debug] GET / (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 01:56:50 2012] [debug] Dispatching "Life25::Site->index".
+[Tue Jan 17 01:56:50 2012] [debug] Rendering template "site/index.html.ep".
+[Tue Jan 17 01:56:50 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 01:56:50 2012] [debug] 200 OK (0.028168s, 35.501/s).
+[Tue Jan 17 02:06:12 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:06:12 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:06:12 2012] [error] Can't locate object method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0xaa565a8)') called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa565a8)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9385028)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db22b0)', 'HASH(0x9db7a78)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e50)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e50)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2420)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94088)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e50)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x9878dc0)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x9878dc0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x9878dc0)', '7af5b31ddafb663bf3bcf2ba7c526c99', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91960)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91960)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91960)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f90)', 'IO::Socket::INET=GLOB(0x9d91820)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f90)', 'Read', 'CODE(0x9d91d70)', 'IO::Socket::INET=GLOB(0x9d91820)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f90)', 8, 'EV::IO=SCALAR(0x9d91f70)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f70)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f90)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:06:12 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 02:06:12 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 02:06:12 2012] [debug] Rendering inline template.
+[Tue Jan 17 02:06:12 2012] [debug] 500 Internal Server Error (0.649383s, 1.540/s).
+[Tue Jan 17 02:06:12 2012] [error] Can't locate object method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0xaa565a8)') called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa565a8)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9385028)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db22b0)', 'HASH(0x9db7a78)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e50)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e50)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2420)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94088)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e50)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x9878dc0)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x9878dc0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x9878dc0)', '7af5b31ddafb663bf3bcf2ba7c526c99', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91960)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91960)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91960)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f90)', 'IO::Socket::INET=GLOB(0x9d91820)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f90)', 'Read', 'CODE(0x9d91d70)', 'IO::Socket::INET=GLOB(0x9d91820)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f90)', 8, 'EV::IO=SCALAR(0x9d91f70)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f70)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f90)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:06:56 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:06:56 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:06:57 2012] [error] Can't locate object method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0xaa56588)') called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa56588)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9879270)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db22b0)', 'HASH(0x9db7a78)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2420)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94060)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e28)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x9879210)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x9879210)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x9879210)', 'd118f71b88af4c493908d8d3aed2419d', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91940)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'Read', 'CODE(0x9d91d50)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 8, 'EV::IO=SCALAR(0x9d91f50)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f50)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f30)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:06:57 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 02:06:57 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 02:06:57 2012] [debug] Rendering inline template.
+[Tue Jan 17 02:06:57 2012] [debug] 500 Internal Server Error (0.588715s, 1.699/s).
+[Tue Jan 17 02:06:57 2012] [error] Can't locate object method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0xaa56588)') called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa56588)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9879270)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db22b0)', 'HASH(0x9db7a78)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2420)', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94060)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db22b0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e28)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x9879210)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x9879210)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x9879210)', 'd118f71b88af4c493908d8d3aed2419d', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91940)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'Read', 'CODE(0x9d91d50)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 8, 'EV::IO=SCALAR(0x9d91f50)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f50)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f30)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:07:05 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:07:05 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:07:05 2012] [error] Can't locate object method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0xaa5a880)') called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa5a880)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9dabbe8)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0xaa59310)', 'HASH(0x9db7a78)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9daba98)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94060)', 'around_dispatch', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e28)', 'Mojo::Transaction::HTTP=HASH(0x9d91750)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x9879210)', 'Mojo::Transaction::HTTP=HASH(0x9d91750)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x9879210)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9d91750)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9d91750)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9d91750)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9d91750)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x9879210)', 'd118f71b88af4c493908d8d3aed2419d', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91940)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'Read', 'CODE(0x9d91d50)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 8, 'EV::IO=SCALAR(0x9d91f50)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f50)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f30)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:07:05 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 02:07:05 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 02:07:05 2012] [debug] 500 Internal Server Error (0.028150s, 35.524/s).
+[Tue Jan 17 02:07:05 2012] [error] Can't locate object method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0xaa5a880)') called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa5a880)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9dabbe8)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0xaa59310)', 'HASH(0x9db7a78)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9daba98)', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94060)', 'around_dispatch', 'Mojolicious::Controller=HASH(0xaa59310)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e28)', 'Mojo::Transaction::HTTP=HASH(0x9d91750)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x9879210)', 'Mojo::Transaction::HTTP=HASH(0x9d91750)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x9879210)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9d91750)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9d91750)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9d91750)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9d91750)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x9879210)', 'd118f71b88af4c493908d8d3aed2419d', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91940)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'Read', 'CODE(0x9d91d50)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 8, 'EV::IO=SCALAR(0x9d91f50)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f50)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f30)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:07:26 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:07:26 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:07:26 2012] [error] Can't locate class method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD(undef) called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa56700)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9879270)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2400)', 'HASH(0x9db79b0)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e10)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e10)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2570)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94060)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e10)', 'Mojo::Transaction::HTTP=HASH(0x9dab678)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'Mojo::Transaction::HTTP=HASH(0x9dab678)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab678)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab678)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab678)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab678)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x90e9bf0)', '92323bd677a1863136198083476359cd', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d918d8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d918d8)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d918d8)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03eb8)', 'IO::Socket::INET=GLOB(0x9d91798)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03eb8)', 'Read', 'CODE(0x9d91ce8)', 'IO::Socket::INET=GLOB(0x9d91798)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03eb8)', 8, 'EV::IO=SCALAR(0x9d91ee8)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91ee8)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03eb8)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:07:26 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 02:07:26 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 02:07:26 2012] [debug] Rendering inline template.
+[Tue Jan 17 02:07:26 2012] [debug] 500 Internal Server Error (0.618299s, 1.617/s).
+[Tue Jan 17 02:07:26 2012] [error] Can't locate class method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD(undef) called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa56700)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9879270)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2400)', 'HASH(0x9db79b0)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e10)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e10)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2570)', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94060)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db2400)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e10)', 'Mojo::Transaction::HTTP=HASH(0x9dab678)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'Mojo::Transaction::HTTP=HASH(0x9dab678)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab678)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab678)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab678)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab678)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x90e9bf0)', '92323bd677a1863136198083476359cd', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d918d8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d918d8)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d918d8)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03eb8)', 'IO::Socket::INET=GLOB(0x9d91798)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03eb8)', 'Read', 'CODE(0x9d91ce8)', 'IO::Socket::INET=GLOB(0x9d91798)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03eb8)', 8, 'EV::IO=SCALAR(0x9d91ee8)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91ee8)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03eb8)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:08:11 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:08:11 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:08:12 2012] [error] Can't locate class method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD(undef) called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa568c8)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9879350)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0x9db23e0)', 'HASH(0x9db7990)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2550)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94068)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e30)', 'Mojo::Transaction::HTTP=HASH(0x9dab658)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'Mojo::Transaction::HTTP=HASH(0x9dab658)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab658)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab658)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab658)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab658)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x90e9bf0)', '6cb079004df84cd948ca88083e8b6032', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91948)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'Read', 'CODE(0x9d91d58)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 8, 'EV::IO=SCALAR(0x9d91f58)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f58)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f60)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:08:12 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 02:08:12 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 02:08:12 2012] [debug] Rendering inline template.
+[Tue Jan 17 02:08:12 2012] [debug] 500 Internal Server Error (0.605440s, 1.652/s).
+[Tue Jan 17 02:08:12 2012] [error] Can't locate class method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD(undef) called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa568c8)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9879350)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0x9db23e0)', 'HASH(0x9db7990)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2550)', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94068)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db23e0)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e30)', 'Mojo::Transaction::HTTP=HASH(0x9dab658)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'Mojo::Transaction::HTTP=HASH(0x9dab658)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab658)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab658)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab658)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab658)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x90e9bf0)', '6cb079004df84cd948ca88083e8b6032', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91948)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'Read', 'CODE(0x9d91d58)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 8, 'EV::IO=SCALAR(0x9d91f58)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f58)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f60)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:08:13 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:08:13 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:08:13 2012] [error] Can't locate class method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD(undef) called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa5aca8)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0xaa5a428)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5aa38)', 'HASH(0x9db7990)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0xaa5a238)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94068)', 'around_dispatch', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e30)', 'Mojo::Transaction::HTTP=HASH(0xaa5a318)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'Mojo::Transaction::HTTP=HASH(0xaa5a318)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'request', 'Mojo::Transaction::HTTP=HASH(0xaa5a318)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0xaa5a318)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0xaa5a318)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0xaa5a318)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x90e9bf0)', '6cb079004df84cd948ca88083e8b6032', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91948)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'Read', 'CODE(0x9d91d58)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 8, 'EV::IO=SCALAR(0x9d91f58)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f58)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f60)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:08:13 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 02:08:13 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 02:08:13 2012] [debug] 500 Internal Server Error (0.024861s, 40.224/s).
+[Tue Jan 17 02:08:13 2012] [error] Can't locate class method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD(undef) called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa5aca8)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0xaa5a428)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5aa38)', 'HASH(0x9db7990)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0xaa5a238)', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94068)', 'around_dispatch', 'Mojolicious::Controller=HASH(0xaa5aa38)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e30)', 'Mojo::Transaction::HTTP=HASH(0xaa5a318)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'Mojo::Transaction::HTTP=HASH(0xaa5a318)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'request', 'Mojo::Transaction::HTTP=HASH(0xaa5a318)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0xaa5a318)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0xaa5a318)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0xaa5a318)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x90e9bf0)', '6cb079004df84cd948ca88083e8b6032', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91948)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'Read', 'CODE(0x9d91d58)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 8, 'EV::IO=SCALAR(0x9d91f58)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f58)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f60)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:08:18 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:08:18 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:08:18 2012] [error] Can't locate class method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD(undef) called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa3b890)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0xaa58728)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5ad58)', 'HASH(0x9db7990)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0xaa5acc8)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94068)', 'around_dispatch', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e30)', 'Mojo::Transaction::HTTP=HASH(0x9db7e60)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'Mojo::Transaction::HTTP=HASH(0x9db7e60)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9db7e60)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9db7e60)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9db7e60)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9db7e60)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x90e9bf0)', '6cb079004df84cd948ca88083e8b6032', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91948)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'Read', 'CODE(0x9d91d58)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 8, 'EV::IO=SCALAR(0x9d91f58)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f58)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f60)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:08:18 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 02:08:18 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 02:08:18 2012] [debug] 500 Internal Server Error (0.022914s, 43.641/s).
+[Tue Jan 17 02:08:18 2012] [error] Can't locate class method "sha1_sum" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD(undef) called at script/../lib/Life25/DB.pm line 185
+	User::save('User=HASH(0xaa3b890)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0xaa58728)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5ad58)', 'HASH(0x9db7990)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c48)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e30)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0xaa5acc8)', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94068)', 'around_dispatch', 'Mojolicious::Controller=HASH(0xaa5ad58)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e30)', 'Mojo::Transaction::HTTP=HASH(0x9db7e60)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'Mojo::Transaction::HTTP=HASH(0x9db7e60)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x90e9bf0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9db7e60)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9db7e60)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9db7e60)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9db7e60)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x90e9bf0)', '6cb079004df84cd948ca88083e8b6032', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91948)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91948)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 'Read', 'CODE(0x9d91d58)', 'IO::Socket::INET=GLOB(0x9d91808)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f60)', 8, 'EV::IO=SCALAR(0x9d91f58)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f58)', 1) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f60)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 02:09:18 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:09:18 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:09:19 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:09:19 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:09:19 2012] [debug] 200 OK (0.675740s, 1.480/s).
+[Tue Jan 17 02:09:21 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:09:21 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:09:21 2012] [debug] 200 OK (0.024427s, 40.938/s).
+[Tue Jan 17 02:11:01 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:11:01 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:11:01 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:11:01 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:11:01 2012] [debug] 200 OK (0.581911s, 1.718/s).
+[Tue Jan 17 02:11:06 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:11:06 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:11:06 2012] [debug] 200 OK (0.018897s, 52.918/s).
+[Tue Jan 17 02:11:12 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:11:12 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:11:12 2012] [debug] 200 OK (0.015862s, 63.044/s).
+[Tue Jan 17 02:11:14 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:11:14 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:11:14 2012] [debug] 200 OK (0.022857s, 43.750/s).
+[Tue Jan 17 02:12:38 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:12:38 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:12:39 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:12:39 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:12:39 2012] [debug] 200 OK (0.596794s, 1.676/s).
+[Tue Jan 17 02:22:59 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:22:59 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:23:00 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:23:00 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:23:00 2012] [debug] 200 OK (0.561338s, 1.781/s).
+[Tue Jan 17 02:23:29 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:23:29 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:23:29 2012] [debug] 200 OK (0.013178s, 75.884/s).
+[Tue Jan 17 02:24:20 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:24:20 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:24:21 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:24:21 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:24:21 2012] [debug] 200 OK (0.558587s, 1.790/s).
+[Tue Jan 17 02:24:28 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:24:28 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:24:28 2012] [debug] 200 OK (0.013973s, 71.567/s).
+[Tue Jan 17 02:25:00 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:25:00 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:25:01 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:25:01 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:25:01 2012] [debug] 200 OK (0.591208s, 1.691/s).
+[Tue Jan 17 02:26:24 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:26:24 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:26:24 2012] [debug] 200 OK (0.017215s, 58.089/s).
+[Tue Jan 17 02:26:41 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:26:41 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:26:41 2012] [debug] 200 OK (0.014641s, 68.301/s).
+[Tue Jan 17 02:33:24 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:33:24 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:33:24 2012] [debug] 200 OK (0.022918s, 43.634/s).
+[Tue Jan 17 02:33:40 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:33:40 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:33:40 2012] [debug] 200 OK (0.017837s, 56.063/s).
+[Tue Jan 17 02:33:58 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:33:58 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:33:59 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:33:59 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:33:59 2012] [debug] 200 OK (0.662408s, 1.510/s).
+[Tue Jan 17 02:34:12 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:34:12 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:34:12 2012] [debug] 200 OK (0.018718s, 53.425/s).
+[Tue Jan 17 02:35:51 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:35:51 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:35:51 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:35:51 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:35:51 2012] [debug] 200 OK (0.567587s, 1.762/s).
+[Tue Jan 17 02:36:37 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:36:37 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:36:38 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:36:38 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:36:38 2012] [debug] 200 OK (0.607308s, 1.647/s).
+[Tue Jan 17 02:36:43 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:36:43 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:36:43 2012] [debug] 200 OK (0.019217s, 52.037/s).
+[Tue Jan 17 02:39:35 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:39:35 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:39:35 2012] [debug] 200 OK (0.019516s, 51.240/s).
+[Tue Jan 17 02:50:38 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 02:50:38 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 02:50:39 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 02:50:39 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 02:50:39 2012] [debug] 200 OK (0.586399s, 1.705/s).
+[Tue Jan 17 12:56:56 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 12:56:56 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 12:56:57 2012] [error] syntax error at script/../lib/Life25/DB.pm line 191, near "@);"
+BEGIN not safe after errors--compilation aborted at script/../lib/Life25/DB.pm line 200.
+Compilation failed in require at script/../lib/Life25/Site.pm line 8.
+BEGIN failed--compilation aborted at script/../lib/Life25/Site.pm line 8.
+Compilation failed in require at (eval 245) line 1.
+
+[Tue Jan 17 12:56:57 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 12:56:57 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 12:56:57 2012] [debug] Rendering inline template.
+[Tue Jan 17 12:56:57 2012] [debug] 500 Internal Server Error (1.802034s, 0.555/s).
+[Tue Jan 17 12:57:09 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 12:57:09 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 12:57:10 2012] [error] Can't locate object method "password1" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0xa9ee4e8)') called at script/../lib/Life25/DB.pm line 176
+	User::before_save('User=HASH(0xa9ee4e8)', 'User=HASH(0xa9ee4e8)') called at script/../lib/Life25/DB.pm line 191
+	User::save('User=HASH(0xa9ee4e8)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9510d58)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db2440)', 'HASH(0x9db79f0)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e50)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e50)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db25b0)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94088)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e50)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x98793f0)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x98793f0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x98793f0)', '7706ab999bc458cd886fbd700d0f4e59', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91950)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91950)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91950)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f80)', 'IO::Socket::INET=GLOB(0x9d91810)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f80)', 'Read', 'CODE(0x9d91d60)', 'IO::Socket::INET=GLOB(0x9d91810)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f80)', 8, 'EV::IO=SCALAR(0x9d91f60)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f60)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f80)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 12:57:10 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 12:57:10 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 12:57:10 2012] [debug] Rendering inline template.
+[Tue Jan 17 12:57:10 2012] [debug] 500 Internal Server Error (0.796640s, 1.255/s).
+[Tue Jan 17 12:57:10 2012] [error] Can't locate object method "password1" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0xa9ee4e8)') called at script/../lib/Life25/DB.pm line 176
+	User::before_save('User=HASH(0xa9ee4e8)', 'User=HASH(0xa9ee4e8)') called at script/../lib/Life25/DB.pm line 191
+	User::save('User=HASH(0xa9ee4e8)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x9510d58)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db2440)', 'HASH(0x9db79f0)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c68)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e50)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e50)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db25b0)', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94088)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db2440)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e50)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x98793f0)', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x98793f0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab6b8)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab6b8)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x98793f0)', '7706ab999bc458cd886fbd700d0f4e59', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91950)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91950)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91950)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f80)', 'IO::Socket::INET=GLOB(0x9d91810)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f80)', 'Read', 'CODE(0x9d91d60)', 'IO::Socket::INET=GLOB(0x9d91810)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f80)', 8, 'EV::IO=SCALAR(0x9d91f60)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f60)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f80)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 12:57:42 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 12:57:42 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 12:57:43 2012] [error] Can't locate object method "password1" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0x9dbb758)') called at script/../lib/Life25/DB.pm line 176
+	User::before_save('User=HASH(0x9dbb758)', 'User=HASH(0x9dbb758)') called at script/../lib/Life25/DB.pm line 191
+	User::save('User=HASH(0x9dbb758)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x947abb0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2420)', 'HASH(0x9db79d0)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2590)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94060)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e28)', 'Mojo::Transaction::HTTP=HASH(0x9dab698)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x98793a0)', 'Mojo::Transaction::HTTP=HASH(0x9dab698)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x98793a0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab698)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab698)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab698)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab698)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x98793a0)', 'e648249e41a6734fb36d2dfa3554c179', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91940)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'Read', 'CODE(0x9d91d50)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 8, 'EV::IO=SCALAR(0x9d91f50)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f50)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f30)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 12:57:43 2012] [debug] Template "exception.development.html.ep" not found.
+[Tue Jan 17 12:57:43 2012] [debug] Template "exception.html.ep" not found.
+[Tue Jan 17 12:57:43 2012] [debug] Rendering inline template.
+[Tue Jan 17 12:57:43 2012] [debug] 500 Internal Server Error (0.590918s, 1.692/s).
+[Tue Jan 17 12:57:43 2012] [error] Can't locate object method "password1" via package "User" at /usr/local/share/perl/5.10.1/Rose/DB/Object.pm line 1646
+	Rose::DB::Object::AUTOLOAD('User=HASH(0x9dbb758)') called at script/../lib/Life25/DB.pm line 176
+	User::before_save('User=HASH(0x9dbb758)', 'User=HASH(0x9dbb758)') called at script/../lib/Life25/DB.pm line 191
+	User::save('User=HASH(0x9dbb758)') called at script/../lib/Life25/Site.pm line 26
+	Life25::Site::register('Life25::Site=HASH(0x947abb0)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 397
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 387
+	Mojolicious::Routes::_dispatch_controller('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2420)', 'HASH(0x9db79d0)', 0) called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 555
+	Mojolicious::Routes::_walk_stack('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious/Routes.pm line 143
+	Mojolicious::Routes::dispatch('Mojolicious::Routes=HASH(0x9b93c40)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 153
+	Mojolicious::dispatch('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 225
+	Mojolicious::__ANON__('Life25=HASH(0x9b88e28)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 185
+	Mojolicious::__ANON__('CODE(0x9db2590)', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 31
+	Mojolicious::Plugins::__ANON__() called at /usr/local/share/perl/5.10.1/Mojolicious/Plugins.pm line 34
+	Mojolicious::Plugins::emit_chain('Mojolicious::Plugins=HASH(0x9b94060)', 'around_dispatch', 'Mojolicious::Controller=HASH(0x9db2420)') called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojolicious.pm line 192
+	Mojolicious::handler('Life25=HASH(0x9b88e28)', 'Mojo::Transaction::HTTP=HASH(0x9dab698)') called at /usr/local/share/perl/5.10.1/Mojo/Server.pm line 20
+	Mojo::Server::__ANON__('Mojo::Server::Daemon=HASH(0x98793a0)', 'Mojo::Transaction::HTTP=HASH(0x9dab698)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Server::Daemon=HASH(0x98793a0)', 'request', 'Mojo::Transaction::HTTP=HASH(0x9dab698)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 108
+	Mojo::Server::Daemon::__ANON__('Mojo::Transaction::HTTP=HASH(0x9dab698)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 19
+	Mojo::EventEmitter::emit('Mojo::Transaction::HTTP=HASH(0x9dab698)', 'request') called at /usr/local/share/perl/5.10.1/Mojo/Transaction/HTTP.pm line 134
+	Mojo::Transaction::HTTP::server_read('Mojo::Transaction::HTTP=HASH(0x9dab698)', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 271
+	Mojo::Server::Daemon::_read('Mojo::Server::Daemon=HASH(0x98793a0)', 'e648249e41a6734fb36d2dfa3554c179', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/Server/Daemon.pm line 236
+	Mojo::Server::Daemon::__ANON__('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/EventEmitter.pm line 31
+	Mojo::EventEmitter::emit_safe('Mojo::IOLoop::Stream=HASH(0x9d91940)', 'read', 'GET /register HTTP/1.1\x{d}\x{a}Host: localhost:3000\x{d}\x{a}User-Agent: Moz...') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 128
+	Mojo::IOLoop::Stream::_read('Mojo::IOLoop::Stream=HASH(0x9d91940)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop/Stream.pm line 59
+	Mojo::IOLoop::Stream::__ANON__('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher.pm line 128
+	Mojo::IOWatcher::_sandbox('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 'Read', 'CODE(0x9d91d50)', 'IO::Socket::INET=GLOB(0x9d91800)') called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 49
+	Mojo::IOWatcher::EV::_io('Mojo::IOWatcher::EV=HASH(0x9c03f30)', 8, 'EV::IO=SCALAR(0x9d91f50)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 27
+	Mojo::IOWatcher::EV::__ANON__('EV::IO=SCALAR(0x9d91f50)', 3) called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	eval {...} called at /usr/local/share/perl/5.10.1/Mojo/IOWatcher/EV.pm line 39
+	Mojo::IOWatcher::EV::start('Mojo::IOWatcher::EV=HASH(0x9c03f30)') called at /usr/local/share/perl/5.10.1/Mojo/IOLoop.pm line 317
+	Mojo::IOLoop::start('Mojo::IOLoop=HASH(0x98794f0)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 122
+	Mojo::Server::Morbo::_spawn('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 83
+	Mojo::Server::Morbo::_manage('Mojo::Server::Morbo=HASH(0x91cc000)') called at /usr/local/share/perl/5.10.1/Mojo/Server/Morbo.pm line 47
+	Mojo::Server::Morbo::run('Mojo::Server::Morbo=HASH(0x91cc000)', './script/life25') called at /usr/local/bin/morbo line 59
+
+[Tue Jan 17 12:57:55 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 12:57:55 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 12:57:55 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 12:57:56 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 12:57:56 2012] [debug] 200 OK (0.632214s, 1.582/s).
+[Tue Jan 17 12:58:19 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 12:58:19 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 12:58:19 2012] [debug] 200 OK (0.024739s, 40.422/s).
+[Tue Jan 17 12:58:24 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 12:58:24 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 12:58:24 2012] [debug] 200 OK (0.015877s, 62.984/s).
+[Tue Jan 17 13:05:19 2012] [debug] GET /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 13:05:19 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 13:05:20 2012] [debug] Rendering template "site/register.html.ep".
+[Tue Jan 17 13:05:20 2012] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 17 13:05:20 2012] [debug] 200 OK (0.571727s, 1.749/s).
+[Tue Jan 17 13:05:42 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 13:05:42 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 13:05:42 2012] [debug] 200 OK (0.027385s, 36.516/s).
+[Tue Jan 17 13:07:17 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 13:07:17 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 13:07:17 2012] [debug] 200 OK (0.015356s, 65.121/s).
+[Tue Jan 17 13:07:34 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 13:07:34 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 13:07:34 2012] [debug] 200 OK (0.006148s, 162.655/s).
+[Tue Jan 17 13:07:36 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 13:07:36 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 13:07:36 2012] [debug] 200 OK (0.013997s, 71.444/s).
+[Tue Jan 17 13:07:38 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 13:07:38 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 13:07:38 2012] [debug] 200 OK (0.028395s, 35.217/s).
+[Tue Jan 17 13:07:41 2012] [debug] POST /register (Mozilla/5.0 (Ubuntu; X11; Linux i686; rv:9.0.1) Gecko/20100101 Firefox/9.0.1).
+[Tue Jan 17 13:07:41 2012] [debug] Dispatching "Life25::Site->register".
+[Tue Jan 17 13:07:41 2012] [debug] 200 OK (0.013361s, 74.845/s).

@@ -2,15 +2,30 @@ package Life25::Site;
 use strict;
 use warnings;
 use base 'Mojolicious::Controller';
+use utf8;
+
 use Data::Dumper;
 use Life25::DB;
+
 sub register
 {	
 		my $self = shift;
 		
 		my $user = User->new;
-		$user->fill($self->req->body_params->to_hash);
-		$user->save();
+		
+		$user->login($self->req->body_params->param('login'));
+		
+		if($user->load())
+		{
+			$user->error("Пользователь " . $user->login . " уже зарегистрирован!");
+		}
+		else
+		{
+			$user = User->new;
+			$user->fill($self->req->body_params->to_hash);
+			$user->save();
+		}		
+		
 		$self->stash('user', $user);
 		
 		$self->render();
