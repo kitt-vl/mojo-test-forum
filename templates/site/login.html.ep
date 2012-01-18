@@ -1,0 +1,45 @@
+% layout 'default';
+% my $user;
+% if($self->req->method eq 'POST' && defined( $user = $self->stash('user')))
+% {
+%	if($user->error)
+%	{
+%			my @errors = split /\n/, $user->error;
+%			unshift @errors, 'OOooops: ';
+		<div class="error pad1">
+		%==		join '<br/>', @errors
+		</div>
+%	}
+% }
+<div class="pad1">
+	
+</div>
+
+<div class="pad1">
+%= form_for login  => (method => 'post') => begin
+	<table id="tbl_login">
+		<tr>
+			<td>
+				Логин: 
+			</td>
+			<td>
+			%= 		text_field 'login'
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Пароль: 
+			</td>
+			<td>
+			%= 		text_field 'password' 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				%=	submit_button 'Вход'
+			</td>
+		</tr>
+	</table>
+% end
+</div>
+

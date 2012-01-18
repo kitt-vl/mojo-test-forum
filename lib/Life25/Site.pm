@@ -12,25 +12,52 @@ sub register
 		
 		my $user = User->new;
 
-		$user->fill($self->req->body_params->to_hash);
-		
-		$user->extra('last_ip', $self->tx->remote_address);
-		
-		$user->save();
-	
+		if($self->req->method eq 'POST')
+		{
+			$user->fill($self->req->body_params->to_hash);
+			
+			$user->extra('last_ip', $self->tx->remote_address);
+			
+			$user->save()
+
+		}
 		
 		$self->stash('user', $user);
 		
 		$self->render();
 }
 
-sub test{	
+sub login{	
 		my $self = shift;
 		
-		my $txt = $self->render_partial(template => "site/common.html.ep/reg");
-		$txt .= $self->render_partial(template => "site/common.html.ep/reg2");
+		if($self->req->method eq 'POST')
+		{
+			my $user = User->new;
+			
+			if($user->do_login($self->req->body_params->param('login'),
+								$self->req->body_params->param('password')))
+			{
+				my $s = $self->app->session;
+				$s->data('auth', 1);
+				$s->data('login', $user->login);
+				$s->flush;
+				$self->redirect_to('/');
+			}
+							
+			$self->stash('user', $user);
+		}
 		
-		$self->render( message => "test page here12 Hello!.", details => $txt, template => "site/index");
+		$self->render;
+}
+
+sub logout{
+		my $self = shift;
+		if($self->app->session->data('auth'))
+		{
+			$self->app->session->expire;
+			$self->app->session->flush;
+		}
+		$self->redirect_to('/');
 }
 
 sub index{	

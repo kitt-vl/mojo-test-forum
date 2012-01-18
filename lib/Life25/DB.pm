@@ -56,7 +56,7 @@ sub new
 }
 
 #Set default error_mode 'return', better 
-#check error manual, that use eval to catch exception
+#check error manual, that use eval to catch every exception
 sub init{
 	my $self = shift;
 
@@ -73,21 +73,27 @@ sub load{
 	my $old_err = $self->error;
 	
 	my $old_err_mode = $self->meta->error_mode;
+	
 	$self->meta->error_mode('return') unless $old_err_mode ne 'return';
 	
 	my $ret = $self->SUPER::load(@_);
 	
-	$self->error($old_err) unless $self->error ne $old_err;
+	$self->error($old_err) if $self->error ne $old_err;
 	
 	return $ret;
 }
 
 #Nonpersistent properties for object, not saved in database
 sub extra{
+	
 	my $self = shift;
+	
 	my $param = shift;
+	
 	my $val = shift;
+	
 	if (defined $val && defined $param) { $self->{__EXTRA}->{$param} = $val }
+	
 	return $self->{__EXTRA}->{$param};
 }
 
@@ -252,6 +258,22 @@ sub before_save{
 	return ! scalar $self->errors;
 }
 
+sub do_login{
+	my $self = shift;
+	
+	my ($login,$pass) = @_;
+	
+	$self->login($login);
+	
+	$self->errors("Пользователь $login не зарегистрирован!") unless $self->load;
+	
+	if(!$self->not_found)
+	{
+		$self->errors("Неправильный пароль!") if $self->password ne sha1_sum($pass);
+	}
+	
+	return ! $self->errors;
+}
 #sub save{
 #	my $self = $_[0];
 #	return 0 unless $self->before_save(@_);

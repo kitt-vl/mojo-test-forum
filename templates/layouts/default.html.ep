@@ -13,8 +13,19 @@
 <body>	  
 	  
 	    <div class="header">
-	         header
-	         
+%	if($self->app->session->data('auth') == 1)	   
+%	{
+		Вы авторизовались как 
+		%= $self->app->session->data('login')
+		|
+		<a href="/logout" >Выход</a>
+%	}
+%	else
+%	{
+	    <a href="/login" >Вход</a>
+	    <br/>
+	    <a href="/register" >Регистрация</a>
+%	}
 	    </div> 
 	    <div class="wrapper">
 	        <div class="left">
@@ -32,11 +43,7 @@
 					<li>First</li>
 					<li>First</li>
 					<li>First</li>
-					<li>First</li>
-					<li>First</li>
-					<li>First</li>
-					<li>First</li>
-	            </ul>
+			    </ul>
 	        </div>
 	        <div class="right">
 	            <%= content %>
