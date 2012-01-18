@@ -1,0 +1,1 @@
+morbo --watch 'lib' --watch 'public' --watch 'templates' -v ./script/life25

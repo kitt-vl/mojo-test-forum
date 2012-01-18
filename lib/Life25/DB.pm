@@ -9,6 +9,19 @@ package My::DB;
 use Rose::DB;
 our @ISA = qw(Rose::DB);
  
+#Singleton constructor
+my $instance;
+sub new{
+	my $class = shift;
+	
+	unless(defined $instance)
+	{
+		$instance = $class->SUPER::new(@_);
+	}
+	return $instance;
+	
+}
+	
 My::DB->register_db(
   domain   => 'development',
   type     => 'session',
