@@ -4,6 +4,37 @@ use utf8;
 use DateTime;
 use Data::Dumper;
 ################################################################################
+=head DB schema
+
+ CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `user_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `register_date` datetime NOT NULL,
+  `visit_date` datetime NOT NULL,
+  `last_ip` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`),
+  CONSTRAINT `user_info_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `session` (
+  `sid` int(11) NOT NULL AUTO_INCREMENT,
+  `expires` int(11) NOT NULL,
+  `data` blob,
+  PRIMARY KEY (`sid`)
+) ENGINE=InnoDB AUTO_INCREMENT=516 DEFAULT CHARSET=utf8;
+
+=cut
+################################################################################
 package My::DB;
  
 use Rose::DB;
