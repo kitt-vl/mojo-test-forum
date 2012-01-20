@@ -60,6 +60,11 @@ sub logout{
 		$self->redirect_to('/');
 }
 
+sub show {
+		my $self = shift;
+		$self->render(template => 'site/index', details => "<pre><code> @{[ Dumper $self->app->session->store->sessions ]}</code></pre>", message=>0)
+}
+
 sub index{	
 		my $self = shift;
 

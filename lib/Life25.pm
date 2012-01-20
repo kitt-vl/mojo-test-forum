@@ -4,7 +4,9 @@ use warnings;
 use Data::Dumper;
 use Mojo::Base 'Mojolicious';
 use MojoX::Session;
-use MojoX::Session::Store::Dbi;
+#use MojoX::Session::Store::Dbi;
+#use MojoX::Session::Store::File;
+use Life25::MojoX::Session::Store::Dummy;
 use Life25::DB;		
 
 
@@ -23,7 +25,9 @@ sub session{
 	unless(defined $session)
 	{
 		$session = MojoX::Session->new(
-			store     => MojoX::Session::Store::Dbi->new(dbh  => My::DB->new->dbh),
+			#store     => MojoX::Session::Store::Dbi->new(dbh  => My::DB->new->dbh),
+			#store     => MojoX::Session::Store::File->new, 
+			store	   => Life25::MojoX::Session::Store::Dummy->new,
 			transport => MojoX::Session::Transport::Cookie->new,
 			ip_match  => 1,
 			expires_delta => 3600,
@@ -50,6 +54,7 @@ sub startup {
   $r->route('/register')->to(controller => 'site', action =>'register');
   $r->route('/login')->to(controller =>'site', action =>'login');
   $r->route('/logout')->to(controller =>'site', action =>'logout');
+  $r->route('/show')->to(controller =>'site', action =>'show');
 
   $r->route('/')->to('site#index');  
   
@@ -57,11 +62,13 @@ sub startup {
   $self->hook(before_dispatch => sub {
 	  my $c = shift;
 	    
+	  
 	  my $s = $c->app->session;	  
 	 	  
 	  $s->tx($c->tx);
-
+		
 	  $s->create unless $s->load;
+	  $c->app->log->info('----------- sid = '. $s->sid . ' path = ' . $c->req->url);
 	  $s->extend_expires; 
 	  $s->flush;
 	});

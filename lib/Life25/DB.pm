@@ -45,7 +45,7 @@ my $instance;
 sub new{
 	my $class = shift;
 	
-	unless(defined $instance)
+	unless(defined $instance && $instance->dbh->ping)
 	{
 		$instance = $class->SUPER::new(@_);
 	}
