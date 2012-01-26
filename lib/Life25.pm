@@ -53,6 +53,7 @@ sub startup {
   my $r = $self->routes;
 
   # Normal route to controller
+  $r->route('/:tid', tid => qr{\d+|.{0}})->to(controller => 'site', action => 'index');  
   $r->route('/user/:taction/:id')->to(controller => 'site', action =>'r_test');
   $r->route('/register')->to(controller => 'site', action =>'register');
   $r->route('/login')->to(controller =>'site', action =>'login');
@@ -61,7 +62,7 @@ sub startup {
   $r->route('/user')->to(controller =>'site', action =>'user');
   $r->route('/topic/new')->via('post')->to(controller =>'site', action =>'new_topic');
 
-  $r->route('/')->to('site#index');  
+  
   
   #Set server-storable session
   $self->hook(before_dispatch => sub {

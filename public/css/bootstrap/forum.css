@@ -1,0 +1,35 @@
+
+@import url('./bootstrap.css');
+
+.font24{
+	font-size: 24px;
+}
+
+
+.font18{
+	font-size: 18px;
+}
+
+.hcenter{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+		
+.row {
+	
+	padding: 				.5em .6em .4em .6em;
+	margin: 				.1em;
+	display: 				inline-block;
+	position: 				relative;
+	
+	-webkit-border-radius: 	8px;
+	-moz-border-radius: 	8px;
+	border-radius: 	8px;
+	
+	/* color */
+	color: 				#FFFFFF !important;
+	background-color: 	#8C9582;
+	
+
+}

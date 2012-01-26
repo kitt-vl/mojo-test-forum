@@ -1,37 +1,61 @@
 % layout 'bootstrap';
-% use utf8;
-% use Data::Dumper;
 
 <h2><%== $details %></h2>
 
-	%= form_for '/topic/new'  => (method => 'post') => begin
-	<div class="font24">
-		<p>Название топика:</p>
-			%= text_field 'name', class => "span10"
-		<br/>
-		<p>Сообщение:</p>
-			%= text_area  'message', class => "span10"
-		<br/>
-		<br/>
-			%=	submit_button 'Написать', class => 'btn primary'
-		
-%		my $errors = $self->app->session->flash('errors');
-%		$self->app->session->flush;
-%=		Dumper $errors
-
-<br/>
-
-%		if($errors)
+%	my $topics = $self->stash('topics');
+%	if($topics)
+%	{
+		<div class='row font18 container-fluid'>
+			<div class="span3"><strong>Дата создания</strong></div>
+			<div class="span3"><strong>Автор</strong></div>
+			<div class="span9"><strong>Tema</strong></div>
+		</div>
+%		for my $topic (@$topics)
 %		{
-%			unshift @$errors, '<strong>При создании топика обнаружены ошибки: </strong>';
-%			
-			<div class="row">
-				<div class="span10"> 
-			%==		join "\n", map { "<p class='alert-message error'>$_</p>"} @$errors
+			<div class='row font18 container-fluid'>
+%==				"<div class='span3'>" . $topic->date_create . "</div>"
+%==				"<div class='span3'>" . $topic->user->login . "</div>"
+				<div class='span9'>
+%==					link_to $topic->name => '/topic/'.$topic->id
 				</div>
-			</div>
-			
-%		}
-	</div>
 
-% end
+			</div>
+%		}
+%	}
+%
+%	my $user = $self->app->session->data('user');
+%	if($user)
+%	{
+		<div class="row font18 span14 container-fluid">
+%= 		form_for '/topic/new'  => (method => 'post') => begin
+			
+			<p>Название топика:</p>
+				%= text_field 'name', class => "span16"
+			<br/>
+			<p>Сообщение:</p>
+				%= text_area  'message', class => "span16"
+			<br/>
+			<br/>
+				%=	submit_button 'Написать', class => 'btn primary'
+			
+	%		my $errors = $self->app->session->flash('errors');
+	%		$self->app->session->flush;
+
+
+	%		if($errors)
+	%		{
+	%			unshift @$errors, '<strong>При создании топика обнаружены ошибки: </strong>';
+	%		
+				<p>
+				%==		join "\n", map { "<p class='alert-message error'>$_</p>"} @$errors
+				</p>
+	%		}
+			
+
+%	 	end
+	</div>
+%	}
+%	else
+%	{
+		<div class="container-fluid font18 row alert-message info">Зарегистрируйтесь или залогиньтесь, и у вас появиться возможность создавать топики</div>
+%	}

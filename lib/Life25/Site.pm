@@ -67,6 +67,8 @@ sub new_topic {
 		
 		my $topic = Topic->new;
 		
+		$topic->db->begin_work;
+		
 		$topic->fill($self->req->body_params->to_hash); 
 		$topic->user($self->app->session->data('user'));
 		
@@ -99,6 +101,13 @@ sub new_topic {
 			#utf8::encode($errors);
 			$self->app->session->data('errors' =>\@errors);
 			$self->app->session->flush;
+			
+			$topic->db->rollback;
+		}
+		else
+		{
+			$topic->db->commit;
+			
 		}
 			
 		$self->redirect_to('/');
@@ -111,8 +120,14 @@ sub show {
 
 sub index{	
 		my $self = shift;
-
-		$self->render(details => "Mojo Test Forum");
+		my $offset = $self->stash('tid') || 0;
+		
+		my $topics = Topic::Manager->get_topics(
+						limit => 10,
+						offset => $offset * 10
+					);
+					
+		$self->render(details => "Mojo Test Forum", topics => $topics);
 }
 
 sub user {

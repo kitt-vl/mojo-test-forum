@@ -6,7 +6,7 @@
 %	my $user = $self->app->session->data('user');
 %	if($user)
 %	{
-%		my $res = $user->db->dbh->selectall_arrayref("select version()");
+%		my $res = $user->db->dbh->selectall_arrayref("show tables;");
 		%= Dumper $res
 %	}
 %	else

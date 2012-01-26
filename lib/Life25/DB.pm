@@ -80,6 +80,7 @@ sub new{
 	unless(defined $instance && $instance->dbh->ping)
 	{
 		$instance = $class->SUPER::new(@_);
+		$instance->dbh->{mysql_enable_utf8} = 1;
 	}
 	return $instance;
 	
@@ -453,9 +454,9 @@ sub before_save{
 				my $count = Message::Manager->get_messages_count(
 								query => 
 									[
-										'topic' => $self->topic
+										'topic_id' => $self->topic->id
 									]
-								);
+								) || 0;
 				$self->sid($count+1);
 			}
 		}
