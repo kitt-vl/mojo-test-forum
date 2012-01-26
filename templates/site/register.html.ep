@@ -1,69 +1,74 @@
-% layout 'default';
+% layout 'bootstrap';
+
 
 %		my $user = $self->stash('user');
-%		if($self->req->method eq 'POST' && $user->error)
-%		{
-%			my @errors = split /\n/, $user->error;
-%			unshift @errors, 'В процессе регистрации обнаружены ошибки: ';
-%			
-	<div class="error pad1">
-	%==		join '<br/>', @errors
-	</div>
-	
-%		}
 
-	<pre><code>
-
-	</code></pre>
-	
 %		if(!$user->is_new && !$user->error)
 %		{
+<div class="row">
 			<h1>Вы успешно зарегистрированы!</h1>
+</div>
 %		}
 %		else
 %		{
-		<div class="pad1">
+
+			<h2>Регистрация</h2>
+			<br/>
 			%= form_for register  => (method => 'post') => begin
-			<table id="tbl_register">
+			<table>
 				<tr>
-					<td>
-					Логин: 
+					<td class="span8 font24">
+						Логин:
 					</td>
 					<td>
-					%= 		text_field 'login'
+
+						%= 		text_field 'login', class => 'active'
 					</td>
 				</tr>
 				<tr>
-					<td>
-					Почтовый ящик: 
+					<td class="span5 font24">
+						Почтовый ящик: 
 					</td>
 					<td>
-					%= 		text_field 'email' 
+						%= 		text_field 'email' 
+					</td>
+					</tr>
+				<tr>
+					<td class="span5 font24">
+						Пароль:
+					</td>
+					<td>
+						%= 		password_field 'password1' 
 					</td>
 				</tr>
 				<tr>
-					<td>
-					Пароль: 
+					<td class="span5 font24">
+						Подтверждение пароля:
 					</td>
 					<td>
-					%= 		text_field 'password1' 
-					</td>
-				</tr>
-				<tr>
-					<td>
-					Подтверждение пароля: 
-					</td>
-					<td>
-					%= 		text_field 'password2' 
+						%= 		password_field 'password2'
 					</td>
 				</tr>
 				<tr>
-					<td>
-						%=	submit_button 'Регистрация'
+					<td>				
+						%=	submit_button 'Регистрация', class => 'btn primary'
 					</td>
 				</tr>
 			</table>
 			% end
-		</div>
-%		}
 
+%		if($self->req->method eq 'POST' && $user->error)
+%		{
+%			my @errors = split /\n/, $user->error;
+%			unshift @errors, '<strong>В процессе регистрации обнаружены ошибки: </strong>';
+%			
+		<div class="row">
+			<div class="span10">
+		%==		join '', map { "<p class='alert-message error'>$_</p>"} @errors
+			</div>
+		</div>
+			
+%			}
+		
+
+%		}

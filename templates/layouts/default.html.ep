@@ -6,7 +6,7 @@
     <meta name="description" content="site" />
     <meta name="keywords" content="primorye" />
 
-    <link rel="Stylesheet" href="/main.css" type="text/css" />
+    <link rel="Stylesheet" href="/css/main.css" type="text/css" />
     <!--<script type="text/javascript" src="script/bsc.js">   </script>-->
     
 </head>

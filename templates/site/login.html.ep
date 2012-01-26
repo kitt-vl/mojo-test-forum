@@ -1,4 +1,4 @@
-% layout 'default';
+% layout 'bootstrap';
 % my $user;
 % if($self->req->method eq 'POST' && defined( $user = $self->stash('user')))
 % {
@@ -6,20 +6,19 @@
 %	{
 %			my @errors = split /\n/, $user->error;
 %			unshift @errors, 'OOooops: ';
-		<div class="error pad1">
+
 		%==		join '<br/>', @errors
-		</div>
+
 %	}
 % }
-<div class="pad1">
-	
-</div>
 
-<div class="pad1">
+
+<h2>Авторизация</h2>
+<br/>
 %= form_for login  => (method => 'post') => begin
 	<table id="tbl_login">
 		<tr>
-			<td>
+			<td class="span5 font24">
 				Логин: 
 			</td>
 			<td>
@@ -27,7 +26,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td>
+			<td class="span5 font24">
 				Пароль: 
 			</td>
 			<td>
@@ -36,10 +35,10 @@
 		</tr>
 		<tr>
 			<td>
-				%=	submit_button 'Вход'
+				%=	submit_button 'Вход', class => "btn primary"
 			</td>
 		</tr>
 	</table>
 % end
-</div>
+
 

@@ -1,9 +1,37 @@
-% layout 'default';
+% layout 'bootstrap';
+% use utf8;
+% use Data::Dumper;
 
+<h2><%== $details %></h2>
 
-<h2><%= $message %></h2>
-<div class="pad1">
-	%== 	$details
-</div>
+	%= form_for '/topic/new'  => (method => 'post') => begin
+	<div class="font24">
+		<p>Название топика:</p>
+			%= text_field 'name', class => "span10"
+		<br/>
+		<p>Сообщение:</p>
+			%= text_area  'message', class => "span10"
+		<br/>
+		<br/>
+			%=	submit_button 'Написать', class => 'btn primary'
+		
+%		my $errors = $self->app->session->flash('errors');
+%		$self->app->session->flush;
+%=		Dumper $errors
 
+<br/>
 
+%		if($errors)
+%		{
+%			unshift @$errors, '<strong>При создании топика обнаружены ошибки: </strong>';
+%			
+			<div class="row">
+				<div class="span10"> 
+			%==		join "\n", map { "<p class='alert-message error'>$_</p>"} @$errors
+				</div>
+			</div>
+			
+%		}
+	</div>
+
+% end

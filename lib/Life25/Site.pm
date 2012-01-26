@@ -40,12 +40,14 @@ sub login{
 				my $s = $self->app->session;
 				$s->data('auth', 1);
 				$s->data('login', $user->login);
+				$s->data('user', $user);
+
 				$s->flush;
 				$self->redirect_to('/');
 			}
 							
 			$self->stash('user', $user);
-		}
+		}		
 		
 		$self->render;
 }
@@ -60,18 +62,64 @@ sub logout{
 		$self->redirect_to('/');
 }
 
+sub new_topic {
+		my $self = shift;
+		
+		my $topic = Topic->new;
+		
+		$topic->fill($self->req->body_params->to_hash); 
+		$topic->user($self->app->session->data('user'));
+		
+		$topic->save;
+		
+		my @errors = ();
+		#Only for users logged in
+		if ($topic->error)
+		{
+			push @errors, $topic->errors;			
+		}
+		else
+		{
+			my $message = Message->new;
+			
+			$message->topic($topic);
+			$message->user($topic->user);
+			$message->body_raw($self->req->body_params->param('message'));
+			$message->extra('ip',$self->tx->remote_address);
+			$message->save;
+			
+			if($message->error)
+			{
+				push @errors, $message->errors;
+			}
+		}
+		
+		if(@errors)
+		{
+			#utf8::encode($errors);
+			$self->app->session->data('errors' =>\@errors);
+			$self->app->session->flush;
+		}
+			
+		$self->redirect_to('/');
+		
+}
 sub show {
 		my $self = shift;
-		$self->render(template => 'site/index', details => "<pre><code> @{[ Dumper $self->app->session->store->sessions ]}</code></pre>", message=>0)
+		$self->render(template => 'site/index', details => "<pre><code> @{[ Dumper $self->app->session->data ]}</code></pre>", message=>0)
 }
 
 sub index{	
 		my $self = shift;
 
-		$self->render(	message => "In development yet. See you later.",
-						details => "Some info");
+		$self->render(details => "Mojo Test Forum");
 }
 
+sub user {
+		my $self = shift;
+		$self->render();
+}
+	
 sub r_test{
 		my $self = shift;
 		my $ofs = int rand(14);#int($self->stash('id')) || 0;

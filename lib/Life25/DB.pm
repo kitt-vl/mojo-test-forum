@@ -33,6 +33,38 @@ CREATE TABLE `session` (
   PRIMARY KEY (`sid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=516 DEFAULT CHARSET=utf8;
 
+CREATE TABLE `topics` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `date_create` datetime NOT NULL,
+  `date_update` datetime NOT NULL,
+  `update_user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `update_user_id` (`update_user_id`),
+  KEY `topics` (`name`),
+  CONSTRAINT `topics_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  CONSTRAINT `topics_ibfk_2` FOREIGN KEY (`update_user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `topic_id` int(11) NOT NULL,
+  `body` text NOT NULL,
+  `body_raw` text NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `date_created` datetime NOT NULL,
+  `user_ip` varchar(16) NOT NULL,
+  `sid` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `sid` (`sid`),
+  KEY `user_id` (`user_id`),
+  KEY `topic_id` (`topic_id`),
+  CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  CONSTRAINT `messages_ibfk_2` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
 =cut
 ################################################################################
 package My::DB;
@@ -262,10 +294,10 @@ sub before_save{
 		$user_check = undef;
 		
 		#Simple validation
-		$self->errors("Логин не должен быть пустым!") unless $self->login;
-		$self->errors("Эл. почта не должна быть пустой!") unless $self->email;
-		$self->errors("Пароль не должен быть пустым!") unless $self->extra('password1');
-		$self->errors("Пароль и подтверждение пароля не совпадают!")
+		$self->errors("Логин не должен быть пустым") unless $self->login;
+		$self->errors("Эл. почта не должна быть пустой") unless $self->email;
+		$self->errors("Пароль не должен быть пустым") unless $self->extra('password1');
+		$self->errors("Пароль и подтверждение пароля не совпадают")
 			if($self->extra('password1') and ($self->extra('password1') ne $self->extra('password2')));
 		
 		
@@ -336,5 +368,110 @@ use base qw(My::DB::Object);
 
 __PACKAGE__->meta->auto_initialize;
 
+1;
+################################################################################
+package Topic;
+
+use base qw(My::DB::Object);
+
+__PACKAGE__->meta->auto_initialize;
+
+sub new{
+	my $class = shift;
+	my $self = $class->SUPER::new(@_);
+	$self->init(@_);
+	$self->{__ALLOW_FILL} = ['name'];
+	return $self;
+}
+
+sub before_save{
+		my $self = shift;
+		
+		#Simple validation
+		$self->errors("Не указано название топика") unless $self->name;
+		$self->errors("Невозможно определить автора топика") unless $self->user;
+		
+		
+		#$self->errors("topic error 1");
+		#$self->errors("topic error 2");
+		#$self->errors("topic error 3");
+		
+		if($self->is_new)
+		{
+			$self->update_user($self->user) if $self->user;
+			$self->date_create(DateTime->now);
+			$self->date_update(DateTime->now);
+		}
+		
+		return ! scalar $self->errors;
+		
+}
+
+1;
+################################################################################
+package Topic::Manager;
+ 
+use base 'Rose::DB::Object::Manager';
+ 
+sub object_class { 'Topic' }
+ 
+__PACKAGE__->make_manager_methods('topics');
+ 
+1;
+################################################################################
+package Message;
+
+use base qw(My::DB::Object);
+
+__PACKAGE__->meta->auto_initialize;
+
+sub new{
+	my $class = shift;
+	my $self = $class->SUPER::new(@_);
+	$self->init(@_);
+	$self->{__ALLOW_FILL} = [];
+	return $self;
+}
+
+sub before_save{
+		my $self = shift;
+		
+		#Simple validation
+		$self->errors("Не указано сообщение") unless $self->body_raw;
+		$self->errors("Невозможно определить автора сообщения") unless $self->user;
+		$self->errors("Невозможно определить топик сообщения") unless $self->topic;
+		
+		if($self->is_new)
+		{
+			$self->body($self->body_raw);
+			$self->date_create(DateTime->now);
+			$self->user_ip($self->extra('ip') || '?.?.?.?');
+			
+			#fill sid (sub_id, numeration messages in topic)
+			if($self->topic)
+			{
+				my $count = Message::Manager->get_messages_count(
+								query => 
+									[
+										'topic' => $self->topic
+									]
+								);
+				$self->sid($count+1);
+			}
+		}
+		
+		return ! scalar $self->errors;
+		
+}
+1;
+################################################################################
+package Message::Manager;
+ 
+use base 'Rose::DB::Object::Manager';
+ 
+sub object_class { 'Message' }
+ 
+__PACKAGE__->make_manager_methods('messages');
+ 
 1;
 ################################################################################

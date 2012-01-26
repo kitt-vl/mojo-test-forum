@@ -1,0 +1,21 @@
+% layout 'bootstrap';
+
+% use Data::Dumper;
+
+
+%	my $user = $self->app->session->data('user');
+%	if($user)
+%	{
+%		my $res = $user->db->dbh->selectall_arrayref("select version()");
+		%= Dumper $res
+%	}
+%	else
+%	{
+		<div class="row">
+			<div class="span10"> 
+		%==		"<p class='alert-message error'>Вы не залогинены!</p>"
+			</div>
+		</div>
+%	}
+
+
