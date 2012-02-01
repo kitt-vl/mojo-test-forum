@@ -1,6 +1,4 @@
 
-@import url('./bootstrap.css');
-
 .font24{
 	font-size: 24px;
 }
@@ -29,7 +27,38 @@
 	
 	/* color */
 	color: 				#FFFFFF !important;
-	background-color: 	#8C9582;
+	background-color: 	#C2C2C2;
 	
 
+}
+
+a {
+	text-decoration: underline;
+}
+
+div.MiiLinkPager{
+	background-color: #00FF00;
+	display: block;
+	clear: both;
+}
+
+ul.MiiLinkPager {
+  float: left;
+  margin: 0;
+}
+
+
+ul.MiiLinkPager li
+{
+	border: 2px solid #ddd;
+	border: 2px solid rgba(0, 0, 0, 0.15);
+	padding: 10px;
+	
+	display: inline;
+	line-height: 50px;
+}
+
+ul.MiiLinkPager li.active
+{
+	background-color: #6FE2EC;
 }

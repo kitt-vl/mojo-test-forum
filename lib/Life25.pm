@@ -9,6 +9,7 @@ use MojoX::Session::Store::File;
 #use Life25::MojoX::Session::Store::Dummy;
 use Life25::DB;		
 use Storable;
+use Life25::Site;
 
 #Singleton Mojox::Session
 my $session;
@@ -45,15 +46,21 @@ sub startup {
   my $self = shift;
   #$self->secret(rand() . $$ . rand($$));	
   $self->secret('Mojolicious Rocksss!!');
+
   
   # Documentation browser under "/perldoc" (this plugin requires Perl 5.10)
   $self->plugin('PODRenderer');
+  $self->plugin('Mii');
 
   # Routes
   my $r = $self->routes;
 
   # Normal route to controller
-  $r->route('/:tid', tid => qr{\d+|.{0}})->to(controller => 'site', action => 'index');  
+  $r->route('/:page', page => qr!\d+|.{0}!)->to(controller => 'site', action => 'index', page => 1);  
+  $r->route('/topic/:topic/:page', topic => qr(\d+), page => qr(\d+|.{0}))->to(controller => 'site', action => 'topic' , page => 1);  
+  $r->route('/topic/post')->via('post')->to(controller =>'site', action =>'new_message');
+
+  
   $r->route('/user/:taction/:id')->to(controller => 'site', action =>'r_test');
   $r->route('/register')->to(controller => 'site', action =>'register');
   $r->route('/login')->to(controller =>'site', action =>'login');

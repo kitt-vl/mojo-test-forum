@@ -1,16 +1,5 @@
 % layout 'bootstrap';
-% my $user;
-% if($self->req->method eq 'POST' && defined( $user = $self->stash('user')))
-% {
-%	if($user->error)
-%	{
-%			my @errors = split /\n/, $user->error;
-%			unshift @errors, 'OOooops: ';
 
-		%==		join '<br/>', @errors
-
-%	}
-% }
 
 
 <h2>Авторизация</h2>
@@ -30,7 +19,7 @@
 				Пароль: 
 			</td>
 			<td>
-			%= 		text_field 'password' 
+			%= 		password_field 'password' 
 			</td>
 		</tr>
 		<tr>
@@ -40,5 +29,19 @@
 		</tr>
 	</table>
 % end
+
+% my $user;
+% if($self->req->method eq 'POST' && defined( $user = $self->stash('user')))
+% {
+%		my @errors = $user->errors;
+%		if(@errors)
+%		{
+%			unshift @errors, '<strong>При авторизации обнаружены ошибки: </strong>';
+%		
+			<p>
+			%==		join "\n", map { "<p class='alert-message error'>$_</p>"} @errors
+			</p>
+%		}	
+% }
 
 

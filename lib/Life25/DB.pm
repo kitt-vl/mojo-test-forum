@@ -101,7 +101,10 @@ My::DB->default_type('session');
 1;
 ################################################################################
 package My::DB::Object; 
-use base 'Rose::DB::Object';
+use base qw(Rose::DB::Object Mojo::Base);
+__PACKAGE__->attr( __min => 0 );
+__PACKAGE__->attr( __max => 0 );
+__PACKAGE__->attr( __count => 0 );
 
 #Overloaded constructor whith some private fields initialization
 sub new
@@ -264,6 +267,16 @@ sub is_new{
 
 1; 
 ################################################################################
+package My::DB::Object::Manager;
+use base 'Rose::DB::Object::Manager';
+
+sub get_stats {
+		my $tmp = Topic::Manager->_get_stats;
+		return ($tmp->[0]->__min,$tmp->[0]->__max, $tmp->[0]->__count);
+}
+#Topic::Manager->_base_name
+1;
+################################################################################
 package User;
 use Mojo::Util qw(sha1_sum);
 
@@ -327,13 +340,17 @@ sub do_login{
 	
 	my ($login,$pass) = @_;
 	
+	$self->errors("Не указан логин") unless $login;
+	$self->errors("Не указан пароль") unless $pass;
+	
+	return ! $self->errors if $self->errors;
 	$self->login($login);
 	
-	$self->errors("Пользователь $login не зарегистрирован!") unless $self->load;
+	$self->errors("Пользователь $login не зарегистрирован") unless $self->load;
 	
 	if(!$self->not_found)
 	{
-		$self->errors("Неправильный пароль!") if $self->password ne sha1_sum($pass);
+		$self->errors("Неправильный пароль") if $self->password ne sha1_sum($pass);
 	}
 	
 	return ! $self->errors;
@@ -373,7 +390,7 @@ __PACKAGE__->meta->auto_initialize;
 ################################################################################
 package Topic;
 
-use base qw(My::DB::Object);
+use base qw(My::DB::Object Mojo::Base);
 
 __PACKAGE__->meta->auto_initialize;
 
@@ -384,6 +401,7 @@ sub new{
 	$self->{__ALLOW_FILL} = ['name'];
 	return $self;
 }
+
 
 sub before_save{
 		my $self = shift;
@@ -417,7 +435,7 @@ use base 'Rose::DB::Object::Manager';
 sub object_class { 'Topic' }
  
 __PACKAGE__->make_manager_methods('topics');
- 
+
 1;
 ################################################################################
 package Message;
@@ -425,6 +443,7 @@ package Message;
 use base qw(My::DB::Object);
 
 __PACKAGE__->meta->auto_initialize;
+
 
 sub new{
 	my $class = shift;

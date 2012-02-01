@@ -2,6 +2,10 @@
 
 <h2><%== $details %></h2>
 
+% 	my $count = Topic::Manager->get_topics_count();
+
+%= widget 'LinkPager' , count => $count, block_len => 5
+
 %	my $topics = $self->stash('topics');
 %	if($topics)
 %	{
@@ -27,18 +31,19 @@
 %	if($user)
 %	{
 		<div class="row font18 span14 container-fluid">
+		<h2>Новый топик</h2>
 %= 		form_for '/topic/new'  => (method => 'post') => begin
 			
 			<p>Название топика:</p>
 				%= text_field 'name', class => "span16"
 			<br/>
 			<p>Сообщение:</p>
-				%= text_area  'message', class => "span16"
+				%= text_area  'message', class => "span16", rows => 10, cols => 10;
 			<br/>
 			<br/>
 				%=	submit_button 'Написать', class => 'btn primary'
 			
-	%		my $errors = $self->app->session->flash('errors');
+	%		my $errors = $self->app->session->flash('new_topic_errors');
 	%		$self->app->session->flush;
 
 
@@ -49,8 +54,7 @@
 				<p>
 				%==		join "\n", map { "<p class='alert-message error'>$_</p>"} @$errors
 				</p>
-	%		}
-			
+	%		}			
 
 %	 	end
 	</div>
@@ -59,3 +63,13 @@
 %	{
 		<div class="container-fluid font18 row alert-message info">Зарегистрируйтесь или залогиньтесь, и у вас появиться возможность создавать топики</div>
 %	}
+<br/>
+
+%= widget 'LinkPager' , count => $count, block_len => 5
+
+
+
+
+
+
+

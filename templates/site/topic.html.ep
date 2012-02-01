@@ -1,0 +1,72 @@
+% layout 'bootstrap';
+% my $topic = $self->stash('topic');
+% my $messages = $self->stash('messages');
+
+% my $count = Message::Manager->get_messages_count(
+%				query => [topic_id => $topic->id]
+%	);
+
+%= widget 'LinkPager' , count => $count, block_len => 5
+
+
+% use Rose::DateTime::Util qw(:all);
+%== "<p class='font24' >" . $topic->name . "</p>"
+
+% for my $mes (@$messages)
+% {
+			<div class='row font18 container-fluid'>
+				<div class='span4'>
+%=				 	$mes->sid
+					&nbsp;
+%=					$mes->user->login
+					<br/>
+%				my $date = parse_date($mes->date_create);
+
+%== 				format_date($date, "%d.%m.%Y")
+					<br/>
+%==					format_date($date, "%H.%M.%S")					
+				</div>
+				<div class='span9'>
+%==					$mes->body
+				</div>
+
+			</div>
+
+% }
+
+
+%	my $user = $self->app->session->data('user');
+%	if($user)
+%	{
+		<div class="row font18 span14 container-fluid">
+
+%= 		form_for '/topic/post'  => (method => 'post') => begin
+			
+
+			<p>Новое сообщение:</p>
+				%= text_area  'message', class => "span16", rows => 10, cols => 10;
+				%= hidden_field 'tid' => $topic->id
+			<br/>
+			<br/>
+				%=	submit_button 'Написать', class => 'btn primary'
+			
+	%		my $errors = $self->app->session->flash('new_message_error');
+	%		$self->app->session->flush;
+
+
+	%		if($errors)
+	%		{
+	%			unshift @$errors, '<strong>При добавлении сообщения ошибки: </strong>';
+	%		
+				<p>
+				%==		join "\n", map { "<p class='alert-message error'>$_</p>"} @$errors
+				</p>
+	%		}			
+
+%	 	end
+	</div>
+%	}
+%	else
+%	{
+		<div class="container-fluid font18 row alert-message info">Зарегистрируйтесь или залогиньтесь, и у вас появиться возможность отвечать</div>
+%	}

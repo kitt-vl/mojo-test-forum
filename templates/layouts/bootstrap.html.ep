@@ -7,7 +7,7 @@
     <meta name="description" content="site" />
     <meta name="keywords" content="primorye" />
 
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.css" /> -->
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap/forum.css" />
 	
     <!--<script type="text/javascript" src="script/bsc.js">   </script>-->
