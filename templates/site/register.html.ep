@@ -1,6 +1,3 @@
-% layout 'bootstrap';
-
-
 %		my $user = $self->stash('user');
 
 %		if(!$user->is_new && !$user->error)

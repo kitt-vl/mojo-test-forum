@@ -1,3 +1,15 @@
+package Life25::User;
+use strict;
+use warnings;
+use base 'Mojolicious::Controller';
+
+sub show{
+	my $self = shift;
+	$self->render( text => $self->url_for('news', news_id=>123, page => 456)->to_abs);
+	#'User conroller action show uid='. $self->stash('uid'));
+}
+1;
+################################################################################
 package Life25::Site;
 use strict;
 use warnings;
@@ -6,6 +18,10 @@ use utf8;
 use Data::Dumper;
 use Life25::DB;
 
+sub news {
+	my $self = shift;
+	$self->render(text => $self->url_for()->to_abs);
+}
 
 sub register
 {	
@@ -250,24 +266,33 @@ sub register {
 	$app->helper(
 		widget => sub {
 
-		  $self->_owner(shift);		  
-		  my $name = shift;			  
+		  my $c = shift;		  
+		  my $name = shift;		
+		  my $widget;
 		  
-		  #If name without package asumming its Mii::
-		  $name = 'Mii::' . $name unless $name =~ /(\:\:)+/;
-		  
-		  my $loader = Mojo::Loader->new;
-		  my $e = $loader->load($name);
-		  die "Can't load $name: $e" if ref $e;
-		  die "Can't load $name: nothing to load" if defined $e;
-		  
+		  #$DB::single = 1;
+		  if(ref $name && $name->isa('Mii'))
+		  {	  
+			$widget = $name;
+		  }
+		  else
+		  {
+			  #If name without package asumming its Mii::
+			  $name = 'Mii::' . $name unless $name =~ /(\:\:)+/;
+			  
+			  my $loader = Mojo::Loader->new;
+			  my $e = $loader->load($name);
+			  die "Can't load $name: $e" if ref $e;
+			  die "Can't load $name: nothing to load" if defined $e;
+			  $widget = $name->new;
+		  }
 		  my $params = $self->_parse( @_);
 		  
-		  my $widget = $name->new;
-		  $widget->_owner($self->_owner);
+		  
+		  $widget->_owner($c);
 		  $widget->_init($params->{params});
 		  
-		  return b( $widget->_run($params) );
+		  return b( $widget->render($params) );
 		}
 	);
 }
@@ -293,9 +318,9 @@ sub _parse {
 	return $params;
 }
 
-sub _run {
+sub render {
 	my $self = shift;
-	die "Subclass '" . __PACKAGE__ . "' not implement '_run' method.";
+	die "Subclass '" . (ref $self) . "' not implement 'render' method.";
 	my $params = shift;
 	
 	return dumper_html $params;
@@ -325,7 +350,7 @@ sub _init{
 	
 	for my $par (keys %params)
 	{
-		$self->$par($params{$par}) if $par !~ /^[_]/ && $self->can($par);
+		$self->$par(delete $params{$par}) if $par !~ /^[_]/ && $self->can($par) && defined $params{$par};
 	}
 }
 
@@ -355,6 +380,7 @@ has block_len => 3;
 has per_page => 10;		
 has space => '...';	
 has page_var => 'page';	
+has route_name => '';
 
 sub paginate {
 		my $self = shift;
@@ -402,7 +428,7 @@ sub paginate {
 		return @ans; 
 }
 
-sub _run {
+sub render {
 	my $self = shift;
 
 	my $params = shift;	
@@ -412,7 +438,11 @@ sub _run {
 	my $pager = "";
 	for my $page (@buttons)
 	{
-		my $url = $self->_owner->url_for( $self->page_var => $page);
+		my @url_params = ($self->page_var => $page);
+		unshift @url_params, $self->route_name if $self->route_name;
+		
+		my $url = $self->_owner->url_for( @url_params)->to_abs;
+		
 		if($page eq $self->current_page)
 		{
 			$pager .= "<li class='active'><a href='" . $url  . "' >$page</a></li>\n" ;
@@ -427,7 +457,9 @@ sub _run {
 		}
 	} 
 	
-	$pager = "<div class='MiiLinkPager'>\n<ul class='MiiLinkPager' id='". $self->id ."'>\n$pager\n</ul>\n</div>";
+	$pager = "<div class='MiiLinkPager'>\n<ul class='MiiLinkPager tabs' id='". $self->id ."'>\n$pager\n</ul>\n</div>" ;
+	#. dumper_html($params);
+	# . "app.routes=" . dumper_html($self->_owner->app->routes);
 	
 	return $pager; 
 }
@@ -437,5 +469,21 @@ package Mii::ActiveForm;
 use Mojo::Base 'Mii::Widget';
 use Data::Dumper::HTML qw(dumper_html);
 
+has object => sub { undef };
+
+sub render{
+	my $self = shift;
+	my $params = shift;
+	my $ret = "form start here<br/> ";
+	$ret .= $params->{content} if defined $params->{content};
+	$ret .= "<br/>form end here<br/>";
+	
+	return $ret;
+}
+
+sub test{
+	my $self = shift;
+		return 'object is '. dumper_html($self->object);
+	}
 
 1;

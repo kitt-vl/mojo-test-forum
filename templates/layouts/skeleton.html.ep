@@ -6,10 +6,11 @@
     <meta name="description" content="site" />
     <meta name="keywords" content="primorye" />
 
-	<!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.css" /> -->
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap/forum.css" />
+	<link rel="stylesheet" type="text/css" href="/css/skeleton/base.css" />
+	<link rel="stylesheet" type="text/css" href="/css/skeleton/skeleton.css" />
+	<link rel="stylesheet" type="text/css" href="/css/skeleton/layout.css" />
 	
-    <!--<script type="text/javascript" src="script/bsc.js">   </script>-->
+   <!-- <script type="text/javascript" src="script/bsc.js">   </script>-->
     
 </head>
 <body>	  
@@ -24,16 +25,15 @@
 %		else
 %		{		
 			<li><a href="/login">Войти</a></li>
+			<li><a href="/register">Регистрация</a></li>
 %		}
 
 		<li><a href="/show">Показать сессию</a></li>
-		<li><a href="#">Settings</a></li>
-		<li><a href="#">Contact</a></li>
     </ul>
     
     
 
-		<div class="hero-unit container">
+		<div class="container">
 %=	 		content
 		</div>
 

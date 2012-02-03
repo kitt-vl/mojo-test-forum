@@ -54,7 +54,7 @@ CREATE TABLE `messages` (
   `body` text NOT NULL,
   `body_raw` text NOT NULL,
   `user_id` int(11) NOT NULL,
-  `date_created` datetime NOT NULL,
+  `date_create` datetime NOT NULL,
   `user_ip` varchar(16) NOT NULL,
   `sid` int(11) NOT NULL,
   PRIMARY KEY (`id`),

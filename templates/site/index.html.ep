@@ -1,46 +1,50 @@
-% layout 'bootstrap';
+% use Data::Dumper::HTML qw(dumper_html);
 
-<h2><%== $details %></h2>
+% my $count = Topic::Manager->get_topics_count();
+% use Rose::DateTime::Util qw(:all);
+%= widget 'LinkPager' , count => $count, block_len => 5, route_name => 'topic_list'
 
-% 	my $count = Topic::Manager->get_topics_count();
+% my $af = Mii::ActiveForm->new;
+%= $af->test (some =>1, params=>2, here=>3, object => 321) => begin
+	some content here
+%= '<br/> af is ' . dumper_html($af);
+% end
 
-%= widget 'LinkPager' , count => $count, block_len => 5
-
+		<table class='table'>
+			<tr>
+			<td ><strong>Создано</strong></td>
+			<td ><strong>Tema</strong></td>
+			</tr>
 %	my $topics = $self->stash('topics');
 %	if($topics)
 %	{
-		<div class='row font18 container-fluid'>
-			<div class="span3"><strong>Дата создания</strong></div>
-			<div class="span3"><strong>Автор</strong></div>
-			<div class="span9"><strong>Tema</strong></div>
-		</div>
+
 %		for my $topic (@$topics)
 %		{
-			<div class='row font18 container-fluid'>
-%==				"<div class='span3'>" . $topic->date_create . "</div>"
-%==				"<div class='span3'>" . $topic->user->login . "</div>"
-				<div class='span9'>
+			<tr >
+%==				"<td >" .  $topic->user->login . ' @ ' . format_date($topic->date_create, '%d.%m.%Y %H:%M:%S' ) . "</td>"
+				<td >
 %==					link_to $topic->name => '/topic/'.$topic->id
-				</div>
-
-			</div>
+				</td>
+				
+			</tr >
 %		}
 %	}
+		</table>
 %
 %	my $user = $self->app->session->data('user');
 %	if($user)
 %	{
-		<div class="row font18 span14 container-fluid">
+		<div class="sixteen columns">
 		<h2>Новый топик</h2>
 %= 		form_for '/topic/new'  => (method => 'post') => begin
 			
-			<p>Название топика:</p>
-				%= text_field 'name', class => "span16"
-			<br/>
-			<p>Сообщение:</p>
-				%= text_area  'message', class => "span16", rows => 10, cols => 10;
-			<br/>
-			<br/>
+			<h4 class='half-bottom add-top'>Название топика:</h4>
+				%= text_field 'name', class => "hcenter"
+
+			<h4 class='half-bottom add-top'>Сообщение:</h4>
+				%= text_area  'message', class => "hcenter", rows => 10, cols => 10;
+
 				%=	submit_button 'Написать', class => 'btn primary'
 			
 	%		my $errors = $self->app->session->flash('new_topic_errors');

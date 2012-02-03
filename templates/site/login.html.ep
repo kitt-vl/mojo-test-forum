@@ -1,7 +1,3 @@
-% layout 'bootstrap';
-
-
-
 <h2>Авторизация</h2>
 <br/>
 %= form_for login  => (method => 'post') => begin

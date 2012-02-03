@@ -1,4 +1,3 @@
-% layout 'bootstrap';
 % my $topic = $self->stash('topic');
 % my $messages = $self->stash('messages');
 
@@ -10,30 +9,36 @@
 
 
 % use Rose::DateTime::Util qw(:all);
+
+		<table class='table'>
+			<tr>
+			<td ><strong>Автор</strong></td>
+			<td ><strong>Сообщение</strong></td>
+			</tr>
+			
 %== "<p class='font24' >" . $topic->name . "</p>"
 
 % for my $mes (@$messages)
 % {
-			<div class='row font18 container-fluid'>
-				<div class='span4'>
+			<tr>
+				<td class='span4'>
 %=				 	$mes->sid
 					&nbsp;
 %=					$mes->user->login
 					<br/>
-%				my $date = parse_date($mes->date_create);
 
-%== 				format_date($date, "%d.%m.%Y")
+%== 				format_date($mes->date_create, "%d.%m.%Y")
 					<br/>
-%==					format_date($date, "%H.%M.%S")					
-				</div>
-				<div class='span9'>
+%==					format_date($mes->date_create, "%H:%M:%S")					
+				</td>
+				<td>
 %==					$mes->body
-				</div>
+				</td>
 
-			</div>
+			</tr>
 
 % }
-
+		</table>
 
 %	my $user = $self->app->session->data('user');
 %	if($user)
@@ -43,11 +48,10 @@
 %= 		form_for '/topic/post'  => (method => 'post') => begin
 			
 
-			<p>Новое сообщение:</p>
-				%= text_area  'message', class => "span16", rows => 10, cols => 10;
+			<h4>Новое сообщение:</h4>
+				%= text_area  'message', class => "hcenter", rows => 10, cols => 10;
 				%= hidden_field 'tid' => $topic->id
-			<br/>
-			<br/>
+
 				%=	submit_button 'Написать', class => 'btn primary'
 			
 	%		my $errors = $self->app->session->flash('new_message_error');

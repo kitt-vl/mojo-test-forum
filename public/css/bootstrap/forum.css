@@ -1,4 +1,6 @@
 
+/*@import url('./bootstrap.css');
+
 .font24{
 	font-size: 24px;
 }
@@ -25,7 +27,7 @@
 	-moz-border-radius: 	8px;
 	border-radius: 	8px;
 	
-	/* color */
+
 	color: 				#FFFFFF !important;
 	background-color: 	#C2C2C2;
 	
@@ -62,3 +64,6 @@ ul.MiiLinkPager li.active
 {
 	background-color: #6FE2EC;
 }
+
+
+*/
