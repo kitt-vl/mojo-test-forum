@@ -2,16 +2,18 @@
 
 % my $count = Topic::Manager->get_topics_count();
 % use Rose::DateTime::Util qw(:all);
-%= widget 'LinkPager' , count => $count, block_len => 5, route_name => 'topic_list'
+%= widget 'LinkPager' , count => $count, block_len => 3, route_name => 'topic_list'
 
-% my $af = Mii::ActiveForm->new;
-%= $af->test (some =>1, params=>2, here=>3, object => 321) => begin
+% my $af = create_widget('ActiveForm') ;
+<%= render_widget $af  =>  begin %>
 	some content here
-%= '<br/> af is ' . dumper_html($af);
+	<br/> input start <br/>
+%= $af->input('login', 'Login:', style => 'display:inline; color: red')
+	input end <br/>
 % end
 
 		<table class='table'>
-			<tr>
+			<tr id='first-col'>
 			<td ><strong>Создано</strong></td>
 			<td ><strong>Tema</strong></td>
 			</tr>
@@ -65,7 +67,9 @@
 %	}
 %	else
 %	{
-		<div class="container-fluid font18 row alert-message info">Зарегистрируйтесь или залогиньтесь, и у вас появиться возможность создавать топики</div>
+		<div class="container-fluid font18 row alert-message info">
+			Зарегистрируйтесь или залогиньтесь, и у вас появиться возможность создавать топики
+		</div>
 %	}
 <br/>
 

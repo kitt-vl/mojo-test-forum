@@ -6,11 +6,11 @@
     <meta name="description" content="site" />
     <meta name="keywords" content="primorye" />
 
-	<link rel="stylesheet" type="text/css" href="/css/skeleton/base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/skeleton/base.css" />
 	<link rel="stylesheet" type="text/css" href="/css/skeleton/skeleton.css" />
 	<link rel="stylesheet" type="text/css" href="/css/skeleton/layout.css" />
 	
-   <!-- <script type="text/javascript" src="script/bsc.js">   </script>-->
+	<!-- <script type="text/javascript" src="/js/jquery-1.7.1.min.js">   </script> -->
     
 </head>
 <body>	  
@@ -36,7 +36,9 @@
 		<div class="container">
 %=	 		content
 		</div>
-
+<script type='text/javascript'>
+	$(document).ready(function(){$('body').css('background-color', '#ABCDEF');});
+</script>
 </body>
 </html>
 

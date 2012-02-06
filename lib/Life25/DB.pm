@@ -96,7 +96,21 @@ My::DB->register_db(
   password => 'test_db_$3c9|3T'
 );
 
+My::DB->register_db(
+  domain   => 'dotcloud',
+  type     => 'session',
+  driver   => 'mysql',
+  database => 'test_db',
+  host     => 'life25-kitt.dotcloud.com',
+  port		=> '14183',
+  username => 'root',
+  password => '3CT4NnOub0s3NMqOZzqA'
+);
+#$envjson['DOTCLOUD_DB_MYSQL_HOST']
+
+
 My::DB->default_domain('development');
+#My::DB->default_domain('dotcloud');
 My::DB->default_type('session');
 1;
 ################################################################################

@@ -9,7 +9,10 @@ use MojoX::Session::Store::File;
 use Life25::MojoX::Session::Store::Dummy;
 use Life25::DB;		
 use Storable;
+use HTML::Packer;
 use Life25::Site;
+use Mojo::Util qw(sha1_sum);
+use Time::HiRes qw/time/;
 
 #Singleton Mojox::Session
 my $session;
@@ -41,6 +44,15 @@ sub session{
 	return $session;
 }
 
+my $_cache;
+
+sub cache{
+	$_cache = Mojo::Cache->new unless defined $_cache;
+	return $_cache;
+}
+
+
+
 # This method will run once at server start
 sub startup {
   my $self = shift;
@@ -67,17 +79,20 @@ sub startup {
   $r->route('/login')->to(controller =>'site', action =>'login');
   $r->route('/logout')->to(controller =>'site', action =>'logout');
   $r->route('/show')->to(controller =>'site', action =>'show');
-  $r->route('/user')->to(controller =>'site', action =>'user');
+  $r->route('/test')->to(controller =>'site', action =>'test');
   $r->route('/topic/new')->via('post')->to(controller =>'site', action =>'new_topic');
 
 
   $r->route('/not_obvius_path/news/:news_id/custom_path/:page', news_id => qr(\d+), page => qr(\d+) )->name('news')->to(controller => 'site', action => 'news' ); 
   $r->route('/user/show/:uid')->to(controller =>'user', action =>'show');
   
+  #$self->log->level('info');
   
   #Set server-storable session
   $self->hook(before_dispatch => sub {
 	  my $c = shift;
+	  
+	  $c->stash('Mii.started' => time);
 	    
 	  
 	  my $s = $c->app->session;	  
@@ -89,21 +104,64 @@ sub startup {
 	  $s->extend_expires; 
 	  $s->flush;
 	  
+		#return if $c->stash('mojo.static');
+		##return if $c->req->content->headers->content_type !~ /html/i;
+		##return unless defined $c->res->dom->at('html');
+
+
+	  
+	  #my $key = sha1_sum($c->req->url->to_abs);
+	  
 	  #$DB::single = 1;
+	  
+	  #if(defined (my $val = $c->app->cache->get($key)))
+	  #{
+			#$c->stash('Mii.cached' => 1);
+			#$c->render_data($val);
+			
+	   #}
+	   #my $tst = 1;
+
 	});
 	
-	#$self->hook(after_dispatch => sub {
+	$self->hook(after_dispatch => sub {
 			
-			#my $c = shift;
-			#return if $c->stash('mojo.static');
+			my $c = shift;
+			return if $c->stash('mojo.static');
+			return if $c->res->content->headers->content_type !~ /html/i;
+			return unless defined $c->res->dom->at('html');
 			
 			#$DB::single = 1;
+			
+			#return if $c->stash('Mii.cached');
+			
 
 			#my $dom = $c->res->dom;
-			#$dom->html->body->replace($dom->html->body->append_content('<br/><br/><br/>Nayaned at ' . time));
-			#$c->res->body($dom->content_xml);
-			##$c->res->body('some content');
+			#$dom->html->body->replace($dom->html->body->append_content('<br/><br/><br/>Сгенерировано за ' . (time - $c->stash('Mii.started')) . ' seconds'));
 			
-		#});
+			my $str_html = $c->res->dom->content_xml;
+			
+			my $sm = Mii::ScriptManager->new;
+			
+			my $js_str;
+			if (my @js = keys %{$sm->js_array})
+			{
+					$js_str = join "\n", map { "<script type='text/javascript' src='" . $_ . "' ></script>"} @js;
+					$c->app->log->info("ScriptManager js_array = ". $js_str);										
+			}
+			
+			if($js_str){
+				$str_html =~ s{(\<\/\s*head\s*\>)}{$js_str $1}i;
+			}
+			
+			my $gen_str = '<br/>!Сгенерировано за ' . (time - $c->stash('Mii.started')) . ' секунд!';
+			$str_html =~ s{(\<\/\s*body\s*\>)}{$gen_str $1}i;
+			
+			$c->res->body($str_html);
+			#my $key = sha1_sum($c->req->url->to_abs);
+			#$c->app->cache->set($key => $dom->content_xml);
+
+			
+		});
 }
 1;

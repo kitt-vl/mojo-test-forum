@@ -36,6 +36,10 @@ table.table td {
 	border: 2px solid white;
 }
 
+table.table  tr#first-col{
+	max-width: 25%;
+}
+
 .hcenter{
 
 	margin-left: auto;
