@@ -89,79 +89,79 @@ sub startup {
   #$self->log->level('info');
   
   #Set server-storable session
-  $self->hook(before_dispatch => sub {
-	  my $c = shift;
+  #$self->hook(before_dispatch => sub {
+	  #my $c = shift;
 	  
-	  $c->stash('Mii.started' => time);
+	  #$c->stash('Mii.started' => time);
 	    
 	  
-	  my $s = $c->app->session;	  
+	  #my $s = $c->app->session;	  
 	 	  
-	  $s->tx($c->tx);
+	  #$s->tx($c->tx);
 		
-	  $s->create unless $s->load;
-	  #$c->app->log->info('----------- sid = '. $s->sid . ' path = ' . $c->req->url);
-	  $s->extend_expires; 
-	  $s->flush;
+	  #$s->create unless $s->load;
+	  ##$c->app->log->info('----------- sid = '. $s->sid . ' path = ' . $c->req->url);
+	  #$s->extend_expires; 
+	  #$s->flush;
 	  
-		#return if $c->stash('mojo.static');
-		##return if $c->req->content->headers->content_type !~ /html/i;
-		##return unless defined $c->res->dom->at('html');
+		##return if $c->stash('mojo.static');
+		###return if $c->req->content->headers->content_type !~ /html/i;
+		###return unless defined $c->res->dom->at('html');
 
 
 	  
-	  #my $key = sha1_sum($c->req->url->to_abs);
+	  ##my $key = sha1_sum($c->req->url->to_abs);
 	  
-	  #$DB::single = 1;
+	  ##$DB::single = 1;
 	  
-	  #if(defined (my $val = $c->app->cache->get($key)))
-	  #{
-			#$c->stash('Mii.cached' => 1);
-			#$c->render_data($val);
+	  ##if(defined (my $val = $c->app->cache->get($key)))
+	  ##{
+			##$c->stash('Mii.cached' => 1);
+			##$c->render_data($val);
 			
-	   #}
-	   #my $tst = 1;
+	   ##}
+	   ##my $tst = 1;
 
-	});
+	#});
 	
-	$self->hook(after_dispatch => sub {
+	#$self->hook(after_dispatch => sub {
 			
-			my $c = shift;
-			return if $c->stash('mojo.static');
-			return if $c->res->content->headers->content_type !~ /html/i;
-			return unless defined $c->res->dom->at('html');
+			#my $c = shift;
+			#return if $c->stash('mojo.static');
+			#return if $c->res->content->headers->content_type !~ /html/i;
+			#return unless defined $c->res->dom->at('html');
 			
-			#$DB::single = 1;
+			##$DB::single = 1;
 			
-			#return if $c->stash('Mii.cached');
+			##return if $c->stash('Mii.cached');
 			
 
-			#my $dom = $c->res->dom;
-			#$dom->html->body->replace($dom->html->body->append_content('<br/><br/><br/>Сгенерировано за ' . (time - $c->stash('Mii.started')) . ' seconds'));
+			##my $dom = $c->res->dom;
+			##$dom->html->body->replace($dom->html->body->append_content('<br/><br/><br/>Сгенерировано за ' . (time - $c->stash('Mii.started')) . ' seconds'));
 			
-			my $str_html = $c->res->dom->content_xml;
+			#my $str_html = $c->res->dom->content_xml;
 			
-			my $sm = Mii::ScriptManager->new;
+			#my $sm = Mii::ScriptManager->new;
 			
-			my $js_str;
-			if (my @js = keys %{$sm->js_array})
-			{
-					$js_str = join "\n", map { "<script type='text/javascript' src='" . $_ . "' ></script>"} @js;
-					$c->app->log->info("ScriptManager js_array = ". $js_str);										
-			}
+			#my $js_str;
+			#if (my @js = keys %{$sm->js_array})
+			#{
+					#$js_str = join "\n", map { "<script type='text/javascript' src='" . $_ . "' ></script>"} @js;
+					#$c->app->log->info("ScriptManager js_array = ". $js_str);										
+			#}
 			
-			if($js_str){
-				$str_html =~ s{(\<\/\s*head\s*\>)}{$js_str $1}i;
-			}
+			#if($js_str){
+				#$str_html =~ s{(\<\/\s*head\s*\>)}{$js_str $1}i;
+			#}
 			
-			my $gen_str = '<br/>!Сгенерировано за ' . (time - $c->stash('Mii.started')) . ' секунд!';
-			$str_html =~ s{(\<\/\s*body\s*\>)}{$gen_str $1}i;
+			#my $gen_str = '<br/>!Сгенерировано за ' . (time - $c->stash('Mii.started')) . ' секунд!';
+			#$str_html =~ s{(\<\/\s*body\s*\>)}{$gen_str $1}i;
 			
-			$c->res->body($str_html);
-			#my $key = sha1_sum($c->req->url->to_abs);
-			#$c->app->cache->set($key => $dom->content_xml);
+			#$c->res->body($str_html);
+			##my $key = sha1_sum($c->req->url->to_abs);
+			##$c->app->cache->set($key => $dom->content_xml);
 
 			
-		});
+		#});
 }
 1;
