@@ -1,21 +1,15 @@
-% use Data::Dumper::HTML qw(dumper_html);
+
+%== $details 
 
 % my $count = Topic::Manager->get_topics_count();
 % use Rose::DateTime::Util qw(:all);
 %= widget 'LinkPager' , count => $count, block_len => 3, route_name => 'topic_list'
 
-% my $af = create_widget('ActiveForm') ;
-<%= render_widget $af  =>  begin %>
-	some content here
-	<br/> input start <br/>
-%= $af->input('login', 'Login:', style => 'display:inline; color: red')
-	input end <br/>
-% end
 
 		<table class='table'>
-			<tr id='first-col'>
-			<td ><strong>Создано</strong></td>
-			<td ><strong>Tema</strong></td>
+			<tr id='first-col'>			
+        <td ><strong>Tema</strong></td>
+        <td ><strong>Создано</strong></td>
 			</tr>
 %	my $topics = $self->stash('topics');
 %	if($topics)
@@ -24,10 +18,13 @@
 %		for my $topic (@$topics)
 %		{
 			<tr >
-%==				"<td >" .  $topic->user->login . ' @ ' . format_date($topic->date_create, '%d.%m.%Y %H:%M:%S' ) . "</td>"
 				<td >
 %==					link_to $topic->name => '/topic/'.$topic->id
 				</td>
+        
+        <td >
+%==			  $topic->user->login . ' @ ' . format_date($topic->date_create, '%d.%m.%Y %H:%M:%S' )
+        </td>
 				
 			</tr >
 %		}
@@ -37,7 +34,7 @@
 %	my $user = $self->app->session->data('user');
 %	if($user)
 %	{
-		<div class="sixteen columns">
+		<div class="">
 		<h2>Новый топик</h2>
 %= 		form_for '/topic/new'  => (method => 'post') => begin
 			
@@ -52,7 +49,7 @@
 	%		my $errors = $self->app->session->flash('new_topic_errors');
 	%		$self->app->session->flush;
 
-
+    
 	%		if($errors)
 	%		{
 	%			unshift @$errors, '<strong>При создании топика обнаружены ошибки: </strong>';

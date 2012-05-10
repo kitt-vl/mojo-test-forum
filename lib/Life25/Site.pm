@@ -26,7 +26,7 @@ sub news {
 
 sub test {
 	my $self = shift;
-	$self->render_text($self->url_for()->to_abs, layout => '');
+	$self->render( data => $self->url_for()->to_abs, layout => '');
 	}
 
 sub register
@@ -77,11 +77,12 @@ sub login{
 
 sub logout{
 		my $self = shift;
-		if($self->app->session->data('auth'))
-		{
+		#if($self->app->session->data('auth'))
+		#{
+      $self->app->session->clear;
 			$self->app->session->expire;
 			$self->app->session->flush;
-		}
+		#}
 		$self->redirect_to('/');
 }
 
@@ -189,7 +190,7 @@ sub new_message {
 
 sub show {
 		my $self = shift;
-		$self->render(template => 'site/index', details => "<pre><code> @{[ Dumper $self->app->session->data ]}</code></pre>", message=>0)
+		$self->render(template => 'site/index', details => "<pre><code> @{[ Dumper $self->app->session ]}</code></pre>", message=>0)
 }
 
 sub index{	

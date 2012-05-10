@@ -251,7 +251,7 @@ sub render {
 		}
 	} 
 	
-	$pager = "<div class='MiiLinkPager'>\n<ul class='MiiLinkPager tabs' id='". $self->id ."'>\n$pager\n</ul>\n</div>" ;
+	$pager = "<div class='MiiLinkPager'>\n<ul class='MiiLinkPager nav nav-pills' id='". $self->id ."'>\n$pager\n</ul>\n</div>" ;
 
 	
 	return $pager; 

@@ -1,10 +1,12 @@
 package Life25;
+
 use strict;
 use warnings;
+
 use Data::Dumper;
 use Mojo::Base 'Mojolicious';
 use MojoX::Session;
-#use MojoX::Session::Store::Dbi;
+use MojoX::Session::Store::Dbi;
 use MojoX::Session::Store::File;
 use Life25::MojoX::Session::Store::Dummy;
 use Life25::DB;		
@@ -13,9 +15,9 @@ use HTML::Packer;
 use Life25::Site;
 use Mojo::Util qw(sha1_sum);
 use Time::HiRes qw/time/;
-
+use File::Spec;
 #Singleton Mojox::Session
-my $session;
+my $_session;
 
 #MySql session table schema:
 #CREATE TABLE `session` (
@@ -27,21 +29,23 @@ my $session;
 
 sub session{
 	
+  my $app = shift;
 	$Storable::Deparse = $Storable::Eval = 1; 
-	unless(defined $session)
+	unless(defined $_session)
 	{
-		$session = MojoX::Session->new(
+		$_session = MojoX::Session->new(
 			#store     => MojoX::Session::Store::Dbi->new(dbh  => My::DB->new->dbh),
-			#store     => MojoX::Session::Store::File->new(), 
-			store	   => Life25::MojoX::Session::Store::Dummy->new,
+			store     => MojoX::Session::Store::File->new( dir => File::Spec->catfile($app->home, 'data' , 'session')), 
+			#store	   => Life25::MojoX::Session::Store::Dummy->new,
 			transport => MojoX::Session::Transport::Cookie->new,
 			ip_match  => 1,
 			expires_delta => 3600,
+      
 		);
-		$session->expires(3600);
+		$_session->expires(3600);
 	}
 	
-	return $session;
+	return $_session;
 }
 
 my $_cache;
@@ -65,7 +69,8 @@ sub startup {
   $self->plugin('Mii');
   
   #Default layout
-  $self->defaults(layout => 'skeleton');
+  #$self->defaults(layout => 'skeleton');
+   $self->defaults(layout => 'bootstrap2');
 
   # Routes
   my $r = $self->routes;
@@ -86,23 +91,25 @@ sub startup {
   $r->route('/not_obvius_path/news/:news_id/custom_path/:page', news_id => qr(\d+), page => qr(\d+) )->name('news')->to(controller => 'site', action => 'news' ); 
   $r->route('/user/show/:uid')->to(controller =>'user', action =>'show');
   
-  #$self->log->level('info');
+  $self->log->level('info');
   
   #Set server-storable session
-  #$self->hook(before_dispatch => sub {
-	  #my $c = shift;
+  $self->hook(before_dispatch => sub {
+	  my $c = shift;
 	  
 	  #$c->stash('Mii.started' => time);
 	    
 	  
-	  #my $s = $c->app->session;	  
+	  my $s = $c->app->session;	  
 	 	  
-	  #$s->tx($c->tx);
+	  $s->tx($c->tx);
 		
-	  #$s->create unless $s->load;
-	  ##$c->app->log->info('----------- sid = '. $s->sid . ' path = ' . $c->req->url);
-	  #$s->extend_expires; 
-	  #$s->flush;
+	  $s->create unless $s->load;
+    
+	  $c->app->log->info('----------- sid = '. $s->sid . ' path = ' . $c->req->url);
+    
+	  $s->extend_expires; 
+	  $s->flush;
 	  
 		##return if $c->stash('mojo.static');
 		###return if $c->req->content->headers->content_type !~ /html/i;
@@ -122,7 +129,7 @@ sub startup {
 	   ##}
 	   ##my $tst = 1;
 
-	#});
+	});
 	
 	#$self->hook(after_dispatch => sub {
 			
