@@ -1,51 +1,75 @@
-
-%== $details 
+<div class="page-header">
+  <h1>
+  %== $details 
+  </h1>
+</div>
 
 % my $count = Topic::Manager->get_topics_count();
 % use Rose::DateTime::Util qw(:all);
 %= widget 'LinkPager' , count => $count, block_len => 3, route_name => 'topic_list'
+ 
+
+<div class="row">
+
+      <div class="span9"><h3>Тема</h3></div>
+      <div class="span3"><h3>Создано / Обновлено</h3></div>
+
+</div>
 
 
-		<table class='table'>
-			<tr id='first-col'>			
-        <td ><strong>Tema</strong></td>
-        <td ><strong>Создано</strong></td>
-			</tr>
 %	my $topics = $self->stash('topics');
 %	if($topics)
 %	{
 
 %		for my $topic (@$topics)
 %		{
-			<tr >
-				<td >
-%==					link_to $topic->name => '/topic/'.$topic->id
-				</td>
-        
-        <td >
-%==			  $topic->user->login . ' @ ' . format_date($topic->date_create, '%d.%m.%Y %H:%M:%S' )
-        </td>
-				
-			</tr >
+      
+    <div class="row ">
+    
+      <div class="span9">
+        <h4>
+%==					link_to $topic->name => '/topic/'.$topic->id  
+        </h4>
+      </div>
+      <div class="span3">
+%==			  $topic->user->login . ' @ ' . format_date($topic->date_create, '%d.%m.%Y %H:%M:%S' )      
+      </div>
+    </div>
+
+
 %		}
 %	}
-		</table>
-%
+
+
 %	my $user = $self->app->session->data('user');
 %	if($user)
 %	{
-		<div class="">
-		<h2>Новый топик</h2>
-%= 		form_for '/topic/new'  => (method => 'post') => begin
-			
-			<h4 class='half-bottom add-top'>Название топика:</h4>
-				%= text_field 'name', class => "hcenter"
 
-			<h4 class='half-bottom add-top'>Сообщение:</h4>
-				%= text_area  'message', class => "hcenter", rows => 10, cols => 10;
 
-				%=	submit_button 'Написать', class => 'btn primary'
-			
+
+<div class="page-header">
+  <h3 class="">Новый топик</h3>
+</div>
+
+<div class="row">
+
+    <div class="span12">
+
+      <div class="well">
+      
+   
+%= 		form_for '/topic/new'  => (method => 'post', class=>'width-auto') => begin
+
+      
+			<h4 class=''>Название топика:</h4>
+				%= text_field 'name', class => "width-100"
+
+			<h4 class=''>Сообщение:</h4>
+      
+				%= text_area  'message', class => "width-100", rows => 4;
+
+				%=	submit_button 'Написать', class => 'btn-primary '
+
 	%		my $errors = $self->app->session->flash('new_topic_errors');
 	%		$self->app->session->flush;
 
@@ -55,16 +79,18 @@
 	%			unshift @$errors, '<strong>При создании топика обнаружены ошибки: </strong>';
 	%		
 				<p>
-				%==		join "\n", map { "<p class='alert-message error'>$_</p>"} @$errors
+				%==		join "\n", map { "<p class='alert alert-error'>$_</p>"} @$errors
 				</p>
 	%		}			
 
 %	 	end
-	</div>
+    </div>
+  </div>
+</div>
 %	}
 %	else
 %	{
-		<div class="container-fluid font18 row alert-message info">
+		<div class="alert alert-info ">
 			Зарегистрируйтесь или залогиньтесь, и у вас появиться возможность создавать топики
 		</div>
 %	}

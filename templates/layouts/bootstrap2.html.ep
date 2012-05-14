@@ -5,12 +5,92 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="site" />
     <meta name="keywords" content="primorye" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="kitt">
 
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap2/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap2/bootstrap-responsive.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap2/forum.css" /> -->
 	
   <!-- <script type="text/javascript" src="script/bsc.js">   </script>-->
     
+  <style type="text/css">
+    .bg1{
+      background-color: #80FF69;
+    }
+    
+     .bg2{
+      background-color: #3DFF19;
+    }
+    
+    .margin-top{
+      margin-top: 5px;
+    }
+    
+    .width-auto{
+      margin-left: 0px;
+      margin-right: 0px;
+
+      width: auto;
+        
+    }
+    
+    .width-100{
+      width: 100%;
+      margin-left: -1px;
+      margin-right: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      
+    }
+    
+      input.width-100{
+      width: 100%;
+      margin-left: -1px;
+      margin-right: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      
+    }
+    
+    .border-red{
+        border: 0px solid red;
+    }
+    
+    a{
+        text-decoration: underline;
+    }
+    
+    .show-grid{
+      border-radius: 3px;
+      background-color: rgb(238,238,238);
+    }
+    
+    .show-grid2{
+      border-radius: 3px;
+      background-color: rgb(200,238,238);
+      padding-left: 9px;
+      padding-right: 9px;
+      margin-top: 5px;
+    }
+    
+    .show-grid3{
+      border-radius: 3px;
+      background-color: rgb(200,238,210);
+      padding-left: 9px;
+      padding-right: 9px;
+      margin-top: 5px;
+    }
+    
+    .align-right{
+        text-align: right;
+    }
+    
+    .btn-primary{
+        margin-top: 5px;
+    }
+  </style>
 </head>
 <body>	  
 
@@ -33,7 +113,7 @@
     
     
 
-		<div class="hero-unit container">
+		<div class="container">
 %=	 		content
 		</div>
 

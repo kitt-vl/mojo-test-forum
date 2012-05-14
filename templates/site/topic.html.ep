@@ -1,3 +1,5 @@
+% use Rose::DateTime::Util qw(:all);
+
 % my $topic = $self->stash('topic');
 % my $messages = $self->stash('messages');
 
@@ -8,20 +10,39 @@
 %= widget 'LinkPager' , count => $count, block_len => 5
 
 
-% use Rose::DateTime::Util qw(:all);
+      <h3 class='' >
+%==     $topic->name 
+      </h3>
+      
 
-		<table class='table'>
+
+<!--		<table class='table'>
 			<tr>
 			<td ><strong>Автор</strong></td>
 			<td ><strong>Сообщение</strong></td>
 			</tr>
-			
-%== "<p class='font24' >" . $topic->name . "</p>"
+      -->
+      
+<div class="row bg1">
+  <div class="span12">
+
+    <div class="row">
+      <div class="span3 bg2"><h3>Автор</h3></div>
+      <div class="span9 bg2"><h3>Сообщение</h3></div>
+      
+    </div>
+  </div>
+</div>			
+
 
 % for my $mes (@$messages)
 % {
-			<tr>
-				<td class='span4'>
+
+    <!-- ---------------------- -->
+<div class="row bg1 margin-top">
+  <div class="span12">
+    <div class="row ">
+      <div class="span3 bg2">
 %=				 	$mes->sid
 					&nbsp;
 %=					$mes->user->login
@@ -29,30 +50,33 @@
 
 %== 				format_date($mes->date_create, "%d.%m.%Y")
 					<br/>
-%==					format_date($mes->date_create, "%H:%M:%S")					
-				</td>
-				<td>
-%==					$mes->body
-				</td>
-
-			</tr>
+%==					format_date($mes->date_create, "%H:%M:%S")		
+      </div>
+      <div class="span9 bg2">
+%==					$mes->body   
+      </div>
+    </div>
+  </div>
+</div>      
 
 % }
-		</table>
+
 
 %	my $user = $self->app->session->data('user');
 %	if($user)
 %	{
-		<div class="row font18 span14 container-fluid">
+		<div class="row bg1 margin-top ">
+		
+    <div class="span12 bg2 ">
 
-%= 		form_for '/topic/post'  => (method => 'post') => begin
+%= 		form_for '/topic/post'  => (method => 'post', class=>'width-auto') => begin
 			
 
-			<h4>Новое сообщение:</h4>
-				%= text_area  'message', class => "hcenter", rows => 10, cols => 10;
+			<h4 class="margin-top">Новое сообщение:</h4>
+				%= text_area  'message', class => "width-100", rows => 4;
 				%= hidden_field 'tid' => $topic->id
 
-				%=	submit_button 'Написать', class => 'btn primary'
+				%=	submit_button 'Написать', class => 'btn-primary margin-top'
 			
 	%		my $errors = $self->app->session->flash('new_message_error');
 	%		$self->app->session->flush;
@@ -68,6 +92,7 @@
 	%		}			
 
 %	 	end
+    </div>
 	</div>
 %	}
 %	else
